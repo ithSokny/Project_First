@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./stylecss/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="menu-left">
+                <div class="logo">
+                    <a href=""><img src="./img/elephant.png" style="width:50px;height:50px;">CODE SECURIRY</a>   
+                </div>
+            </div>
+            <div class="menu-right">
+                <button  id="s8server">S8 Server | s8server</button>
+                <button class="icon-user">ITH SOKNY</button>
+                <button class="icon-user"><i class="ri-user-line"></i></button>
+            </div>
+        </div>
+        <!-- click icon user -->
+        <div class="box-user">
+            <div class="icon-user">
+                <i class="ri-user-line"></i>
+                <div class="title-user">ITH SOKNY</div>
+            </div>
+            <div class="list-menu">
+                <ul>
+                    <li class="dropdown">
+                        <button class="dropbtn"><i class="ri-earth-fill"></i>Language</button>
+                        <div class="dropdown-content">
+                            <div class="language">
+                                <img src="./img/flagkhmer.png"style ="width:25px; height:25px;">
+                                <button>Khmer</button>
+                            </div>
+                            <div class="language">
+                                <img src="./img/english.png"style ="width:25px; height:25px;">
+                                <button>Englist</button>
+                            </div>
+                        </div>
+                    </li>
+                    <button class="edit_profile"><i class="ri-edit-2-line"></i>Edit Profile</button>
+                    <button class="change_password"><i class="ri-lock-unlock-line"></i></i>Change Password</button>
+                    <button id="btn_logout"><i class="ri-logout-circle-r-line"></i>Logout</button>
+                </ul>
+            </div>
+        </div>
+        <!-- language -->
+        <div class="contant">
+            <div class="group-item">
+                <div class="item">
+                    <img src="./img/cybersecurity4.jpg" style="width: 200px; height:200px;" alt="">
+                    <h4>codesecurity</h4>
+                </div>
+                <div class="item">
+                    <img src="./img/human resource.jpg" style="width: 200px; height:200px;" alt="">
+                    <h4>Human resource</h4>
+                </div>
+                <div class="item">
+                    <img src="./img/date.jpg" style="width: 200px; height:200px;" alt="">
+                    <h4>date</h4>
+                </div>
+
+                <div class="item">
+                    <img src="./img/invoice.png" style="width: 200px; height:200px;" alt="">
+                    <h4>invoice</h4>
+                </div><div class="item">
+                    <img src="./img/member control.png" style="width: 200px; height:200px;" alt="">
+                    <h4>Menber Control</h4>
+                </div>
+                <div class="item">
+                    <img src="./img/images.png" style="width: 200px; height:200px;" alt="">
+                    <h4>Eeal estate</h4>
+                </div>
+                <div class="item">
+                    <img src="./img/doc.png" style="width: 200px; height:200px;" alt="">
+                    <h4>Document</h4>
+                </div>
+                <div class="item">
+                    <img src="./img/business.jpg" style="width: 200px; height:200px;" alt="">
+                    <h4>Team</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- s8server -->
+    <div id="modal_s8server">
+        <div class="modal">
+            <div class="top-form">
+                <div class="close-modal">
+                    &#10006
+                </div>
+            </div>
+            <div class="login-form">
+                <h2>S8 Server</h2>
+                <form>
+                    <input type="email" name="" class="form-control" placeholder="Localhost">
+                    <input type="password" name="" class="form-control" placeholder="Email">
+                    <button type="button" class="submit-btn">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- editModal -->
+    <div id="modal_editprofile">
+        <div class="modal">
+            <div class="top_form">
+                <div class="title">
+                    <h2>Edit profile</h2>
+                </div>
+                <div class="close_modal">
+                    &#10006
+                </div>
+            </div>
+            <div class="edit_form">
+                <i class="ri-user-line"></i>
+                <div class="form_item">
+                    <form action="">
+                        <div>
+                            <label for=""><span>*</span>Username:</label>
+                            <input type="text" name="" id=""><br>
+                        </div>
+                        <div>
+                            <label for=""><span>*</span>Password:</label>
+                            <input type="number" name="" id=""><br>
+                        </div>
+                        <div>
+                            <label for=""><span>*</span>Phone number:</label>
+                            <input type="text" name="" id=""><br>
+                        </div>
+                        <div>
+                            <label for=""><span>*</span>Email:</label>
+                            <input type="email" name="" id="">
+                        </div>
+                    </form>                
+                </div>
+                <div class="footer">
+                    <button class="btn-save">Save</button>
+                    <button class="btn-cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chnage password -->
+    <div id="modal_changePw">
+        <div class="modal">
+            <div class="top_form">
+                <div class="title">
+                    <h2>Change Password</h2>
+                </div>
+                <div class="close_modal">
+                    &#10006
+                </div>
+            </div>
+            <div class="edit_form">
+                <i class="ri-user-line"></i>
+                <div class="form_item">
+                    <form action="">                
+                            <label for=""><span>*</span>Email:</label>
+                            <input type="text" name="" id=""><br>
+                            <label for=""><span>*</span>Old Password:</label>
+                            <input type="number" name="" id=""><br>
+                            <label for=""><span>*</span>New Password:</label>
+                            <input type="text" name="" id=""><br>
+                            <label for=""><span>*</span>Change Password:</label>
+                            <input type="text" name="" id=""><br>
+                    </form>                
+                </div>
+                <div class="footer">
+                    <button class="btn-save">Save</button>
+                    <button class="btn-cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            $('#s8server').click(function(){
+                $("#modal_s8server").fadeIn().css("display","flex");
+            })
+            $('.close-modal').click(function(){
+                $("#modal_s8server").fadeOut();
+            })
+            $('.icon-user').click(function(){
+                $(".box-user").css("display","block");
+            })
+            $('.edit_profile').click(function(){
+                $("#modal_editprofile").fadeIn().css("display","flex");                
+            })
+            $('.close_modal').click(function(){
+                $("#modal_editprofile").fadeOut();
+            })
+            $('#btn_logout').click(function(){
+                location.href = "file:///D:/Internship/First_Project/login.html";
+            })
+
+            $('.change_password').click(function(){
+                $("#modal_changePw").fadeIn().css("display","flex");
+            })
+            $('.close_modal').click(function(){
+                $("#modal_changePw").fadeOut();
+            })
+            
+        })
+    </script>
+</body>
+</html>
