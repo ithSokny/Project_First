@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="../stylecss/home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Home</title>
 </head>
 <body>
@@ -91,17 +92,22 @@
     <div id="modal_s8server">
         <div class="modal">
             <div class="top-form">
+                <div class="title">
+                    <h2>Tenant</h2>
+                </div>
                 <div class="close-modal">
                     &#10006
                 </div>
             </div>
             <div class="login-form">
-                <h2>S8 Server</h2>
                 <form>
                     <input type="email" name="" class="form-control" placeholder="Localhost">
-                    <input type="password" name="" class="form-control" placeholder="Email">
-                    <button type="button" class="submit-btn">Login</button>
+                    <div class="globe"><i class="fa-solid fa-globe"></i></div>
+                  
+                    <input type="password" name="" class="form-control" placeholder="Server">
+                    <div class="database"><i class="fa-solid fa-database"></i></div>
                 </form>
+                <button type="button" class="submit-btn">Cencal</button>
             </div>
         </div>
     </div>
@@ -118,35 +124,33 @@
             </div>
             <div class="edit_form">
                 <div class="profile">
-                    <img src="./img/user.webp" style="width: 250px; height: 150px;" alt="">
+                    <img src="./img/user.webp" alt="">
                 </div>
                 <div class="form_item">
                     <form action="">
                         <div>
-                            <label for=""><span>*</span>Username:</label>
-                            <input type="text" name="" id=""><br>
-                            
+                            <label for=""><span>*</span>Username:</label><br>
+                            <input type="text" name="" id=""><br>                    
                         </div>
                         <div>
-                            <label for=""><span>*</span>Password:</label>
+                            <label for=""><span>*</span>Password:</label><br>
                             <input type="text" name="" id=""><br>
-                            <div class="icon-show-password"><i class="ri-eye-off-line"></i></div>
+                            <div class="icon-show-password"><i class="fa-solid fa-eye-slash"></i></div>
                         </div>
                         <div>
-                            <label for=""><span>*</span>Phone number:</label>
+                            <label for=""><span>*</span>Phone number:</label><br>
                             <input type="text" name="" id=""><br>
                         </div>
                         <div>
-                            <label for=""><span>*</span>Email:</label>
+                            <label for=""><span>*</span>Email:</label><br>
                             <input type="email" name="" id="">
                         </div>
-                    </form>  
-                    <div class="footer">
-                        <button class="btn-save">Save</button>
-                        <button class="btn-cancel">Cancel</button>
-                    </div>              
+                    </form>               
                 </div>
-               
+                <div class="footer">
+                    <button class="btn-save">Save</button>
+                    <button class="btn-cancel">Cancel</button>
+                </div> 
             </div>
         </div>
     </div>
@@ -174,17 +178,17 @@
                         <div>
                             <label for=""><span>*</span>Old Password:</label>
                             <input type="text" name="" id=""><br>
-                            <div class="icon-show-password"><i class="ri-eye-off-line"></i></div>
+                            <div class="icon-show-password"><i class="fa-solid fa-eye-slash"></i></i></div>
                         </div>
                         <div>
                             <label for=""><span>*</span>New Password:</label>
                             <input type="text" name="" id=""><br>
-                            <div class="icon-show-password2"><i class="ri-eye-off-line"></i></div>
+                            <div class="icon-show-password2"><i class="fa-solid fa-eye-slash"></i></i></div>
                         </div>
                         <div>
                             <label for=""><span>*</span>Change Password:</label>
                             <input type="text" name="" id=""><br>
-                            <div class="icon-show-password3"><i class="ri-eye-off-line"></i></div>
+                            <div class="icon-show-password3"><i class="fa-solid fa-eye-slash"></i></i></div>
                         </div> 
                     </form>                
                 </div>
@@ -203,27 +207,28 @@
             $('.close-modal').click(function(){
                 $("#modal_s8server").fadeOut();
             })
+            // click icon user and click nam
             $('.icon-user').click(function(){
-                $(".box-user").css("display","block");
+                $(".box-user").slideToggle();
             })
+            //click btn edid profile
             $('.edit_profile').click(function(){
                 $("#modal_editprofile").fadeIn().css("display","flex");                
             })
             $('.close_modal').click(function(){
                 $("#modal_editprofile").fadeOut();
             })
+            // click btn logout 
             $('#btn_logout').click(function(){
                 location.href = "../../Project_First/index.html";
             })
-
+            // click btn change password
             $('.change_password').click(function(){
                 $("#modal_changePw").fadeIn().css("display","flex");
             })
             $('.close_modal').click(function(){
                 $("#modal_changePw").fadeOut();
             })
-
-            
         })
     </script>
 </body>
