@@ -165,14 +165,16 @@
 }
 #modal_s8server .modal .login-form .globe i{
 position: absolute;
-top: 10px;
+top: 12px;
 left: 30px;
+color: #90949C;
 }
 #modal_s8server .modal .login-form .database i{
     position: absolute;
-    top: 66px;
+    top: 70px;
     left: 30px;
-    }
+    color: #90949C;
+}
 .login-form button{
     float: right;
     padding: 10px 15px;
@@ -281,7 +283,7 @@ left: 30px;
     background: #e6ecf0;
     padding: 10px 0px 20px 0;
     border-radius: 10px;
-    width: 450px;
+    width: 400px;
     text-align: center;
 }
 #modal_changePw .modal_change .top_form{
