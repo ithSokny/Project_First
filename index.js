@@ -15,6 +15,5 @@ $(document).ready(()=>{
         const type =$("#password").attr('type') === 'password' ? 'text' :'password';
         password.setAttribute('type',type);
         $("#togglepassword").toggleClass('fa-eye');
-        // <i class="fa-solid fa-eye"></i>
     })
 })
