@@ -185,10 +185,7 @@
     padding: 10px 0px 20px 0;
     border-radius: 10px;
     width: 450px;
-    height: 480px;
     text-align: center;
-
-
 }
 .top_form{
     display: flex;
@@ -198,8 +195,9 @@
     cursor: pointer;
 
 }
-.edit_form i{
-    font-size: 80px;  
+.edit_form .profile img{
+    width: 250px;
+    height: 150px; 
 }
 .edit_form span{
     color: red;
@@ -216,25 +214,48 @@
     border: 1px solid  #d0d5d8;
     border-radius: 3px;
 }
+.edit_form .form_item .icon-show-password{
+    position: absolute;
+    right: 740px;
+    top: 517px;
+    z-index: 10000000;
+}
+.edit_form .form_item .icon-show-password2{
+    position: absolute;
+    right: 735px;
+    top: 577px;
+}
+.edit_form .form_item .icon-show-password3{
+    position: absolute;
+    right: 725px;
+    top: 640px;
+   
+}
 .footer{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px 20px;
 }
 .footer button{
     padding: 10px 20px;
 }
 .footer button.btn-save{
-    background: green;
+    background: rgb(28, 187, 28);
     border-radius: 3px;
     border: none;
     color: white;
 }
+.footer button.btn-save:hover{
+    background:rgb(11, 152, 11);
+}
 .footer button.btn-cancel{
-    background: red;
+    background: rgb(232, 43, 43);
     border-radius: 3px;
     border: none;
     color: white;
+}
+.footer button.btn-cancel:hover{
+    background: red;
 }
 
 #modal_changePw{
