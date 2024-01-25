@@ -370,7 +370,6 @@
 #modal_changePw .modal_change .footer button.btn-cancel:hover {
   background: red;
 }
-
 @media screen and (max-width:400px) {
   #icon-menu {
     display: block;
