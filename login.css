@@ -51,7 +51,7 @@
 }
 .input-name input {
     height: 40px;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 10px;
     outline: none;
     border: 1px solid rgb(218, 216, 216);
@@ -64,16 +64,21 @@
     height: 40px;
 
 }
+#togglepassword{
+position: absolute;
+right: 10px;
+top: 12px;
+}
 .icon_user{
     position: absolute;
-    top: 10px;
-    left: 2px;
+    top: 9px;
+    left: 7px;
 }
 .icon_pw{
     position: absolute;
-    top: 12px;
+    top: 9px;
     z-index: 1000;
-    left: 2px;
+    left: 6px;
 }
 .group-have-icon input {
     position: absolute;
@@ -82,7 +87,6 @@
     height: 100%;
     width: 100%;
     background-color: #e8f0fe;
-
 }
 a{
     color: green;

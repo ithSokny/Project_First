@@ -1,4 +1,5 @@
 var admins = [{ username: "admin", password: "110503" }];
+
 $(document).ready(()=>{
     $(".btn-login").click(() => {
         let username = $("#username").val();
@@ -10,4 +11,10 @@ $(document).ready(()=>{
             alert("Incorrect Username and password!");
         }
     });
+    $("#togglepassword").click(()=>{
+        const type =$("#password").attr('type') === 'password' ? 'text' :'password';
+        password.setAttribute('type',type);
+        $("#togglepassword").toggleClass('fa-eye');
+        // <i class="fa-solid fa-eye"></i>
+    })
 })

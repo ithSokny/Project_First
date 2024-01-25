@@ -204,9 +204,9 @@
 }
 .edit_form .form_item{
     margin-top:15px;
+    position: relative;
 }
 .edit_form input{
-
     width: 70%;
     margin-bottom: 20px;
     padding: 12px 12px;
@@ -216,20 +216,8 @@
 }
 .edit_form .form_item .icon-show-password{
     position: absolute;
-    right: 740px;
-    top: 517px;
-    z-index: 10000000;
-}
-.edit_form .form_item .icon-show-password2{
-    position: absolute;
-    right: 735px;
-    top: 577px;
-}
-.edit_form .form_item .icon-show-password3{
-    position: absolute;
-    right: 725px;
-    top: 640px;
-   
+    right: 43px;
+    top: 72px;
 }
 .footer{
     display: flex;
@@ -269,4 +257,52 @@
     display: none;
     justify-content: center;
     align-items: center;
+}
+#modal_changePw .modal_change{
+    background: #e6ecf0;
+    padding: 10px 0px 20px 0;
+    border-radius: 10px;
+    width: 450px;
+    text-align: center;
+}
+#modal_changePw .modal_change .top_form{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#modal_changePw .modal_change .change_form .profile img{
+    width: 250px;
+    height: 150px;
+}
+#modal_changePw .modal_change .form-item{
+    margin-top:15px;
+    position: relative;
+}
+#modal_changePw .modal_change .form-item span{
+    color: red;
+}
+#modal_changePw .modal_change .form-item input{
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    border: 1px solid  #d0d5d8;
+    border-radius: 3px;
+}
+#modal_changePw .modal_change .form-item .icon-show-password{
+    position: absolute;
+    top: 74px;
+    right: 30px;
+}
+#modal_changePw .modal_change .form-item .icon-show-password2{
+    position: absolute;
+    top: 134px;
+    right: 23px;
+}
+#modal_changePw .modal_change .form-item .icon-show-password3{
+    position: absolute;
+    top: 195px;
+    right: 13px;
 }
