@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 30px 100px;
 }
 .container .header .menu-left .logo a{
     display: flex;
@@ -161,19 +161,22 @@
     box-sizing: border-box;
     border: 1px solid  #d0d5d8;
     border-radius: 3px;
+    font-size: 19px;
     
 }
 #modal_s8server .modal .login-form .globe i{
 position: absolute;
-top: 12px;
-left: 30px;
+top: 18px;
+left: 32px;
 color: #90949C;
+font-size: 15px;
 }
 #modal_s8server .modal .login-form .database i{
     position: absolute;
-    top: 70px;
-    left: 30px;
+    top: 86px;
+    left: 32px;
     color: #90949C;
+    font-size: 15px;
 }
 .login-form button{
     float: right;
@@ -227,6 +230,9 @@ color: #90949C;
 #modal_editprofile .modal .edit_form span{
     color: red;
 }
+/* #modal_editprofile .modal .edit_form label{
+    color: #90949C;
+} */
 #modal_editprofile .modal .edit_form input{
     width: 100%;
     margin: 7px 0px;

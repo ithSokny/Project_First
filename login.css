@@ -55,11 +55,11 @@
 }
 .input-name input {
     height: 40px;
-    padding: 10px 25px;
+    padding: 10px 30px;
     border-radius: 5px;
     outline: none;
     border: 1px solid rgb(218, 216, 216);
-    font-size: 14px;
+    font-size: 19px;
 
 }
 .group-have-icon {
@@ -71,21 +71,24 @@
 #togglepassword{
 position: absolute;
 right: 10px;
-top: 12px;
-color: #36383b;
+top: 13px;
+color: #90949C;
+font-size: 14px;
 }
 .icon_user{
     position: absolute;
-    top: 9px;
-    left: 9px;
+    top: 11px;
+    left: 10px;
     color: #90949C;
+    font-size: 14px;
 }
 .icon_pw{
     position: absolute;
-    top: 9px;
+    top: 11px;
     z-index: 1000;
-    left: 9px;
+    left: 10px;
     color: #90949C;
+    font-size: 14px;
 }
 .group-have-icon input {
     position: absolute;
@@ -114,11 +117,12 @@ a:hover{
     background:#1877F2;
     border-radius: 5px;
     border: none;
-    color: white;
+    color: #FFFFFF;
     font-size: 16px;
 }
 label{
     color: #90949C;
+    font-size: 18px;
 }
 .btn-login:hover{
     background:#0d6dea
