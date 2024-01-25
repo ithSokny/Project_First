@@ -235,7 +235,7 @@ left: 30px;
 }
 #modal_editprofile .modal .edit_form .form_item .icon-show-password{
     position: absolute;
-    top: 120px;
+    top: 125px;
     right: 22px;
 }
 #modal_editprofile .modal .edit_form .footer{
@@ -313,17 +313,17 @@ left: 30px;
 }
 #modal_changePw .modal_change .form-item .icon-show-password{
     position: absolute;
-    top: 110px;
+    top: 111px;
     right: 10px;
 }
 #modal_changePw .modal_change .form-item .icon-show-password2{
     position: absolute;
-    top: 182px;
+    top: 184px;
     right: 10px;
 }
 #modal_changePw .modal_change .form-item .icon-show-password3{
     position: absolute;
-    top: 255px;
+    top: 260px;
     right: 10px;
 }
 #modal_changePw .modal_change .footer{
