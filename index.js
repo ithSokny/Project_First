@@ -16,4 +16,5 @@ $(document).ready(()=>{
         password.setAttribute('type',type);
         $("#togglepassword").toggleClass('fa-eye');
     })
+    
 })

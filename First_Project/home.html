@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../stylecss/home.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 <body>
@@ -18,12 +19,20 @@
                 </div>
             </div>
             <div class="menu-right">
-                <button  id="s8server">S8 Server | s8server</button>
+                <button class="s8server">S8 Server | s8server</button>
+                <button class="icon-user">ITH SOKNY</button>
+                <button class="icon-user"><i class="ri-user-line"></i></button>
+            </div>
+            <i class="fa-solid fa-bars" id="icon-menu"></i>
+        </div>
+        <!-- click icon user -->
+        <div class="menu-popup">
+            <div class="box-popu">
+                <button class="s8server">S8 Server | s8server</button>
                 <button class="icon-user">ITH SOKNY</button>
                 <button class="icon-user"><i class="ri-user-line"></i></button>
             </div>
         </div>
-        <!-- click icon user -->
         <div class="box-user">
             <div class="icon-user">
                 <i class="ri-user-line"></i>
@@ -199,15 +208,16 @@
             </div>
         </div>
     </div>
+    <!-- <script src="./home.js"></script> -->
     <script type="text/javascript">
         $(function(){
-            $('#s8server').click(function(){
+            $('.s8server').click(function(){    
                 $("#modal_s8server").fadeIn().css("display","flex");
             })
             $('.close-modal').click(function(){
                 $("#modal_s8server").fadeOut();
             })
-            // click icon user and click nam
+            // click icon user and click name
             $('.icon-user').click(function(){
                 $(".box-user").slideToggle();
             })
@@ -229,6 +239,13 @@
             $('.close_modal').click(function(){
                 $("#modal_changePw").fadeOut();
             })
+
+            $('#icon-menu').click(function(){
+                $(".menu-popup").slideToggle();
+                $("#icon-menu").toggleClass('fa-xmark');
+
+            })
+            
         })
     </script>
 </body>
