@@ -130,6 +130,8 @@
     align-items: center;
 }
 #modal_s8server .modal{
+    position: absolute;
+    top: 200px;
     background: #e6ecf0;
     padding: 10px 0px 20px 0;
     border-radius: 10px;
