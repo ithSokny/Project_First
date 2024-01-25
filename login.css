@@ -31,6 +31,9 @@
     width: 100px;
     height: 100px;
 }
+.container .box .content h3{
+    color: #5e6064;
+}
 .container .box .group-input {
     width: 100%;
     height: auto;
@@ -74,14 +77,14 @@ color: #36383b;
 .icon_user{
     position: absolute;
     top: 9px;
-    left: 7px;
+    left: 9px;
     color: #90949C;
 }
 .icon_pw{
     position: absolute;
     top: 9px;
     z-index: 1000;
-    left: 6px;
+    left: 9px;
     color: #90949C;
 }
 .group-have-icon input {
@@ -95,6 +98,9 @@ color: #36383b;
 a{
     color:#1877F2;
     text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 .group{
     display: flex;
@@ -110,6 +116,9 @@ a{
     border: none;
     color: white;
     font-size: 16px;
+}
+span{
+    color: #90949C;
 }
 .btn-login:hover{
     background:#0d6dea
