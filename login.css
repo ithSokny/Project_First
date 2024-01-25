@@ -75,6 +75,9 @@ top: 13px;
 color: #90949C;
 font-size: 14px;
 }
+#togglepassword:hover{
+    cursor: pointer;
+}
 .icon_user{
     position: absolute;
     top: 11px;

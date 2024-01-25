@@ -27,7 +27,7 @@
 }
 .container .header .menu-right button{
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     padding-left: 10px;
     border: none;
     background: none;
@@ -38,7 +38,7 @@
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
-    width: 200px;
+    width: 210px;
     position: absolute;
     top: 50px;
     right: 100px;
@@ -70,10 +70,15 @@
 .list-menu button{
     border: none;
     text-align: left;
-    padding: 10px;
+    padding: 7px;
+    font-size: 15px;
 }
 .list-menu button:hover{
     color: green;
+}
+.list-menu ul i{
+    padding-right: 8px;
+    font-size: 12px;
 }
 .dropdown-content {
     display: none;
@@ -82,7 +87,7 @@
     min-width: 60px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    right: 185px;
+    right: 194px;
   }
   .dropdown-content .language{
     display: flex;
