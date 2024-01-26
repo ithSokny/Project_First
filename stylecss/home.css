@@ -39,6 +39,11 @@
   background: none;
   cursor: pointer;
 }
+.container .header .menu-right button:hover{
+  background-color: rgb(3, 210, 3);
+  padding:3px 6px;
+  border-radius:3px;
+}
 .container .header .menu-right #menu {
   display: none;
 }
