@@ -23,7 +23,7 @@
                 <button class="s8server">S8 Server | s8server</button>
                 <button class="icon-user">ITH SOKNY</button>
                 <button class="icon-user"><i class="fa-solid fa-user"></i></button>
-                <button><i class="fa-solid fa-expand"></i></button>
+                <button onclick="toggleFullScreen(document.body)"><i class="fa-solid fa-expand"></i></button>
             </div>
             <i class="fa-solid fa-bars" id="icon-menu"></i>
         </div>
@@ -32,7 +32,7 @@
             <div class="box-popu">
                 <button class="s8server">S8 Server | s8server</button>
                 <button class="icon-user">ITH SOKNY</button>
-                <button class="icon-user"><i class="ri-user-line"></i></button>
+                <button class="icon-user"><i class="fa-solid fa-user"></i></button>
             </div>
         </div>
         <div class="box-user">
@@ -247,8 +247,30 @@
                 $("#icon-menu").toggleClass('fa-xmark');
 
             })
-            
         })
+        function toggleFullScreen(elem) {
+                if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+                    if (elem.requestFullScreen) {
+                        elem.requestFullScreen();
+                    } else if (elem.mozRequestFullScreen) {
+                        elem.mozRequestFullScreen();
+                    } else if (elem.webkitRequestFullScreen) {
+                        elem.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+                    } else if (elem.msRequestFullscreen) {
+                        elem.msRequestFullscreen();
+                    }
+                } else {
+                    if (document.cancelFullScreen) {
+                        document.cancelFullScreen();
+                    } else if (document.mozCancelFullScreen) {
+                        document.mozCancelFullScreen();
+                    } else if (document.webkitCancelFullScreen) {
+                        document.webkitCancelFullScreen();
+                    } else if (document.msExitFullscreen) {
+                        document.msExitFullscreen();
+                    }
+                }
+            }
     </script>
 </body>
 </html>
