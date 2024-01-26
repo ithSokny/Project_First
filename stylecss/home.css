@@ -430,14 +430,225 @@
   }
   #modal_s8server .modal {
     position: absolute;
-    top: 200px;
+    top: 100px;
     background: #e6ecf0;
-    padding: 10px 0px 20px 0;
+    padding: 5px 0px 10px 0;
     border-radius: 10px;
     width: 350px;
     text-align: center;
   }
-
+  #modal_s8server .modal .top-form {
+    padding: 5px 11px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .top-form .close-modal {
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .login-form {
+    position: relative;
+  }
+  .login-form form input {
+    width: 94%;
+    margin-bottom: 16px;
+    padding: 5px 30px;
+    box-sizing: border-box;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+  #modal_s8server .modal .login-form .globe i {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: #90949c;
+    font-size: 13px;
+  }
+  #modal_s8server .modal .login-form .database i {
+    position: absolute;
+    top: 58px;
+    left: 30px;
+    color: #90949c;
+    font-size: 13px;
+  }
+  .login-form button {
+    float: right;
+    padding: 7px 15px;
+    width: 19%;
+    background-color: rgb(198, 57, 57);
+    border: 0;
+    border-radius: 3px;
+    margin: 1px 11px;
+    color: white;
+  }
+  /* edit profile */
+#modal_editprofile {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+#modal_editprofile .modal {
+  background: #e6ecf0;
+  padding: 10px 0px 13px 0;
+  border-radius: 10px;
+  width: 350px;
+}
+#modal_editprofile .modal .top_form {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#modal_editprofile .modal .edit_form {
+  text-align: center;
+}
+#modal_editprofile .modal .edit_form .form_item {
+  text-align: start;
+  padding: 10px;
+  position: relative;
+}
+#modal_editprofile .modal .edit_form .profile img {
+  width: 147px;
+  height: 90px;
+}
+#modal_editprofile .modal .edit_form span {
+  color: red;
+}
+#modal_editprofile .modal .edit_form input {
+  width: 100%;
+  margin: 5px 0px;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  border: 1px solid #d0d5d8;
+  border-radius: 3px;
+}
+#modal_editprofile .modal .edit_form .form_item .icon-show-password {
+  position: absolute;
+    top: 107px;
+    right: 20px;
+    font-size: 13px;
+}
+#modal_editprofile .modal .edit_form .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+#modal_editprofile .modal .edit_form .footer button {
+  padding: 7px 15px;
+}
+#modal_editprofile .modal .edit_form .footer button.btn-save:hover {
+  background: rgb(11, 152, 11);
+}
+#modal_editprofile .modal .edit_form .footer button.btn-cancel {
+  background: rgb(232, 43, 43);
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+#modal_editprofile .modal .edit_form .footer button.btn-cancel:hover {
+  background: red;
+}
+/* change-profile */
+#modal_changePw {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#modal_changePw .modal_change {
+  background: #e6ecf0;
+  padding: 10px 0px 13px 0;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+}
+#modal_changePw .modal_change .top_form {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#modal_changePw .modal_change .change_form .profile img {
+  width: 147px;
+  height: 90px;
+}
+#modal_changePw .modal_change .form-item {
+  margin: 15px;
+  position: relative;
+  text-align: start;
+}
+#modal_changePw .modal_change .form-item span {
+  color: red;
+}
+#modal_changePw .modal_change .form-item input {
+  width: 100%;
+  margin: 5px 0px;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  border: 1px solid #d0d5d8;
+  border-radius: 3px;
+}
+#modal_changePw .modal_change .form-item .icon-show-password {
+  position: absolute;
+  top: 95px;
+  right: 10px;
+}
+#modal_changePw .modal_change .form-item .icon-show-password2 {
+  position: absolute;
+  top: 160px;
+  right: 10px;
+}
+#modal_changePw .modal_change .form-item .icon-show-password3 {
+  position: absolute;
+  top: 223px;
+  right: 10px;
+}
+#modal_changePw .modal_change .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+#modal_changePw .modal_change .footer button {
+  padding: 7px 15px;
+}
+#modal_changePw .modal_change .footer button.btn-save {
+  background: rgb(28, 187, 28);
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+#modal_changePw .modal_change .footer button.btn-save:hover {
+  background: rgb(11, 152, 11);
+}
+#modal_changePw .modal_change .footer button.btn-cancel {
+  background: rgb(232, 43, 43);
+  border-radius: 3px;
+  border: none;
+  color: white;
+}
+#modal_changePw .modal_change .footer button.btn-cancel:hover {
+  background: red;
+}
 }
 @media screen and (max-width: 768px) {
     #icon-menu {
