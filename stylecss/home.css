@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 100px;
+  padding: 30px 32px;
 }
 .container .header .menu-left .logo a {
   display: flex;
@@ -32,6 +32,7 @@
   padding-left: 10px;
   border: none;
   background: none;
+  cursor: pointer;
 }
 .container .header .menu-right #menu {
   display: none;
@@ -148,22 +149,27 @@
 #modal_s8server .modal {
   position: absolute;
   top: 200px;
-  background: #e6ecf0;
-  padding: 10px 0px 20px 0;
+  background: #ffff;
+  padding: 10px 0px 15px 0px;
   border-radius: 10px;
   width: 450px;
   text-align: center;
 }
 #modal_s8server .modal .top-form {
-  padding: 10px 20px;
+  padding: 0px 22px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   cursor: pointer;
+  color: #90949c;
 }
+/* .top-form .close-modal h3{
+  color: #90949c;
+} */
 .top-form .close-modal {
   cursor: pointer;
   font-size: 20px;
+ 
 }
 .login-form {
   position: relative;
@@ -195,11 +201,14 @@
   float: right;
   padding: 10px 15px;
   width: 15%;
-  background-color: rgb(198, 57, 57);
+  background-color:gray;
   border: 0;
   border-radius: 3px;
   margin: 5px 22px;
   color: white;
+}
+.login-form button:hover{
+  background: rgb(89, 87, 87);
 }
 /* edit profile */
 #modal_editprofile {
@@ -216,10 +225,11 @@
   align-items: center;
 }
 #modal_editprofile .modal {
-  background: #e6ecf0;
+  background: #ffff;
   padding: 10px 0px 20px 0;
   border-radius: 10px;
   width: 400px;
+  color: gray;
 }
 #modal_editprofile .modal .top_form {
   display: flex;
@@ -253,8 +263,9 @@
 }
 #modal_editprofile .modal .edit_form .form_item .icon-show-password {
   position: absolute;
-  top: 125px;
+  top: 127px;
   right: 22px;
+  font-size: 13px;
 }
 #modal_editprofile .modal .edit_form .footer {
   display: flex;
@@ -265,7 +276,7 @@
   padding: 10px 20px;
 }
 #modal_editprofile .modal .edit_form .footer button.btn-save {
-  background: rgb(28, 187, 28);
+  background: green;
   border-radius: 3px;
   border: none;
   color: white;
@@ -274,13 +285,13 @@
   background: rgb(11, 152, 11);
 }
 #modal_editprofile .modal .edit_form .footer button.btn-cancel {
-  background: rgb(232, 43, 43);
+  background: gray;
   border-radius: 3px;
   border: none;
   color: white;
 }
 #modal_editprofile .modal .edit_form .footer button.btn-cancel:hover {
-  background: red;
+  background: rgb(88, 88, 88);
 }
 /* change password */
 #modal_changePw {
@@ -296,11 +307,12 @@
   align-items: center;
 }
 #modal_changePw .modal_change {
-  background: #e6ecf0;
+  background: #fff;
   padding: 10px 0px 20px 0;
   border-radius: 10px;
   width: 400px;
   text-align: center;
+  color: gray;
 }
 #modal_changePw .modal_change .top_form {
   display: flex;
@@ -319,7 +331,7 @@
   text-align: start;
 }
 #modal_changePw .modal_change .form-item span {
-  color: red;
+  color:rgb(110, 106, 106);
 }
 #modal_changePw .modal_change .form-item input {
   width: 100%;
@@ -331,18 +343,21 @@
 }
 #modal_changePw .modal_change .form-item .icon-show-password {
   position: absolute;
-  top: 111px;
+  top: 113px;
   right: 10px;
+  font-size: 13px;
 }
 #modal_changePw .modal_change .form-item .icon-show-password2 {
   position: absolute;
-  top: 184px;
+  top: 186px;
   right: 10px;
+  font-size: 13px;
 }
 #modal_changePw .modal_change .form-item .icon-show-password3 {
   position: absolute;
-  top: 260px;
+  top: 261px;
   right: 10px;
+  font-size: 13px;
 }
 #modal_changePw .modal_change .footer {
   display: flex;
@@ -353,7 +368,7 @@
   padding: 10px 20px;
 }
 #modal_changePw .modal_change .footer button.btn-save {
-  background: rgb(28, 187, 28);
+  background: green;
   border-radius: 3px;
   border: none;
   color: white;
@@ -362,13 +377,13 @@
   background: rgb(11, 152, 11);
 }
 #modal_changePw .modal_change .footer button.btn-cancel {
-  background: rgb(232, 43, 43);
+  background: gray;
   border-radius: 3px;
   border: none;
   color: white;
 }
 #modal_changePw .modal_change .footer button.btn-cancel:hover {
-  background: red;
+  background: rgb(90, 90, 90);
 }
 @media screen and (max-width:400px) {
   #icon-menu {
@@ -434,7 +449,7 @@
     background: #e6ecf0;
     padding: 5px 0px 10px 0;
     border-radius: 10px;
-    width: 350px;
+    width: 300px;
     text-align: center;
   }
   #modal_s8server .modal .top-form {
@@ -464,22 +479,22 @@
   #modal_s8server .modal .login-form .globe i {
     position: absolute;
     top: 10px;
-    left: 30px;
+    left: 22px;
     color: #90949c;
     font-size: 13px;
   }
   #modal_s8server .modal .login-form .database i {
     position: absolute;
     top: 58px;
-    left: 30px;
+    left: 22px;
     color: #90949c;
     font-size: 13px;
   }
   .login-form button {
     float: right;
     padding: 7px 15px;
-    width: 19%;
-    background-color: rgb(198, 57, 57);
+    width: 23%;
+    background-color: gray;
     border: 0;
     border-radius: 3px;
     margin: 1px 11px;
@@ -503,7 +518,7 @@
   background: #e6ecf0;
   padding: 10px 0px 13px 0;
   border-radius: 10px;
-  width: 350px;
+  width: 300px;
 }
 #modal_editprofile .modal .top_form {
   display: flex;
@@ -544,10 +559,10 @@
 #modal_editprofile .modal .edit_form .footer {
   display: flex;
   justify-content: space-between;
-  padding: 5px 15px;
+  padding: 5px 10px;
 }
 #modal_editprofile .modal .edit_form .footer button {
-  padding: 7px 15px;
+  padding: 5px 10px;
 }
 #modal_editprofile .modal .edit_form .footer button.btn-save:hover {
   background: rgb(11, 152, 11);
@@ -578,14 +593,14 @@
   background: #e6ecf0;
   padding: 10px 0px 13px 0;
   border-radius: 10px;
-  width: 350px;
+  width: 300px;
   text-align: center;
 }
 #modal_changePw .modal_change .top_form {
   display: flex;
   justify-content: space-between;
-  padding: 7px 15px;
-  margin-bottom: 20px;
+  padding: 0px 15px;
+  margin-bottom: 18px;
   cursor: pointer;
 }
 #modal_changePw .modal_change .change_form .profile img {
@@ -610,18 +625,21 @@
 }
 #modal_changePw .modal_change .form-item .icon-show-password {
   position: absolute;
-  top: 95px;
+  top: 97px;
   right: 10px;
+  font-size: 13px;
 }
 #modal_changePw .modal_change .form-item .icon-show-password2 {
   position: absolute;
-  top: 160px;
+  top: 162px;
   right: 10px;
+  font-size: 13px;
 }
 #modal_changePw .modal_change .form-item .icon-show-password3 {
   position: absolute;
-  top: 223px;
+  top: 225px;
   right: 10px;
+  font-size: 13px;
 }
 #modal_changePw .modal_change .footer {
   display: flex;
@@ -629,7 +647,7 @@
   padding: 0px 15px;
 }
 #modal_changePw .modal_change .footer button {
-  padding: 7px 15px;
+  padding: 5px 10px;
 }
 #modal_changePw .modal_change .footer button.btn-save {
   background: rgb(28, 187, 28);
@@ -651,6 +669,7 @@
 }
 }
 @media screen and (max-width: 768px) {
+
     #icon-menu {
         display: block;
         color: #FFFFFF;
@@ -665,7 +684,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
+    padding: 30px 32px;
   }
   .container .header .menu-left .logo a {
     display: flex;
