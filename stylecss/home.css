@@ -258,8 +258,8 @@
   position: relative;
 }
 #modal_editprofile .modal .edit_form .profile img {
-  width: 230px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
 }
 #modal_editprofile .modal .edit_form span {
   color: red;
@@ -333,8 +333,8 @@
   cursor: pointer;
 }
 #modal_changePw .modal_change .change_form .profile img {
-  width: 250px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
 }
 #modal_changePw .modal_change .form-item {
   margin: 15px;
@@ -547,8 +547,8 @@
   position: relative;
 }
 #modal_editprofile .modal .edit_form .profile img {
-  width: 147px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
 }
 #modal_editprofile .modal .edit_form span {
   color: red;
@@ -579,13 +579,13 @@
   background: rgb(11, 152, 11);
 }
 #modal_editprofile .modal .edit_form .footer button.btn-cancel {
-  background: rgb(232, 43, 43);
+  background: gray;
   border-radius: 3px;
   border: none;
   color: white;
 }
 #modal_editprofile .modal .edit_form .footer button.btn-cancel:hover {
-  background: red;
+  background: rgb(63, 63, 63);
 }
 /* change-profile */
 #modal_changePw {
@@ -615,8 +615,8 @@
   cursor: pointer;
 }
 #modal_changePw .modal_change .change_form .profile img {
-  width: 147px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
 }
 #modal_changePw .modal_change .form-item {
   margin: 15px;
@@ -661,7 +661,7 @@
   padding: 5px 10px;
 }
 #modal_changePw .modal_change .footer button.btn-save {
-  background: rgb(28, 187, 28);
+  background: green;
   border-radius: 3px;
   border: none;
   color: white;
@@ -670,13 +670,13 @@
   background: rgb(11, 152, 11);
 }
 #modal_changePw .modal_change .footer button.btn-cancel {
-  background: rgb(232, 43, 43);
+  background:gray;
   border-radius: 3px;
   border: none;
   color: white;
 }
 #modal_changePw .modal_change .footer button.btn-cancel:hover {
-  background: red;
+  background: rgb(72, 72, 72);
 }
 }
 @media screen and (max-width: 768px) {
