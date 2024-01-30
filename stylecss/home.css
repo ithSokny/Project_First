@@ -23,32 +23,65 @@
   align-items: center;
   padding: 30px 32px;
 }
-.container .header .menu-left .logo a {
+.container .header .menu-left{
   display: flex;
+  gap: 15px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: aliceblue;
+} 
+.container .header .menu-left .logo{
+  display: flex;
 }
-.container .header .menu-right button {
-  color: white;
-  font-size: 17px;
-  padding-left: 10px;
-  border: none;
-  background: none;
+.container .header .menu-left .title-logo{
+  font-size: 28px;
+  color: #e6ecf0;
   cursor: pointer;
+}
+.container .header .menu-left .icon-s8{
+  font-size: 20px;
+  color: #e6ecf0;
+  cursor: pointer;
+}
+.container .header .menu-left .logo{
+  width: 50x;
+  height: 50px;
+}
+.container .header .menu-left .logo .title-user{
+  font-size: 20px;
+}
+.container .header .menu-right{
+  display: flex;
+  font-size: 20px;
+  color: #e6ecf0;
+  box-sizing: border-box;
+  cursor: pointer;
+  gap:10px;
+}
+.container .header .menu-right .title-user{
+  padding:3px 6px;
+}
+.container .header .menu-right .icon-user{
+  padding:3px 6px;
+}
+.container .header .menu-right .icon-fullscreen{
+  padding:3px 6px;
+}
+.container .header .menu-right .icon-fullscreen:hover{
+  background-color: rgb(3, 210, 3);
+  border-radius:3px;
+}
+.container .header .menu-right .icon-user:hover{
+  background-color: rgb(3, 210, 3);
+  border-radius:3px;
+}
+.container .header .menu-right .title-user:hover{
+  background-color: rgb(3, 210, 3);
+  border-radius:3px;
 }
 .container .header .menu-right button:hover{
   background-color: rgb(3, 210, 3);
-  padding:3px 6px;
   border-radius:3px;
-}
-.container .header .menu-right #menu {
-  display: none;
-}
-.menu-popup{
-    display: none;
+  font-size: 18px;
 }
 .box-user {
   display: none;
@@ -58,8 +91,8 @@
   cursor: pointer;
   width: 210px;
   position: absolute;
-  top: 50px;
-  right: 100px;
+  top: 54px;
+  right: 73px;
   border-radius: 3px;
 }
 .box-user .icon-user {
@@ -89,9 +122,11 @@
   text-align: left;
   padding: 7px;
   font-size: 15px;
+  background: none;
+  box-sizing: border-box;
 }
 .list-menu button:hover {
-  color: green;
+  color: green; 
 }
 .list-menu ul i {
   padding-right: 8px;
@@ -118,32 +153,32 @@
 .dropdown:hover .dropdown-content {
   display: inline-block;
 }
-#icon-menu {
-  display: none;
-}
 /* contant */
 .container .contant {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 2.5rem 1.5rem;
 }
 .container .contant .group-item {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
-
+  box-sizing: border-box;
 }
 .container .contant .group-item .item {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 2.5rem 1.5rem;
+  border: 1px solid transparent;
+  box-sizing: border-box;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
   border-radius: 10px;
+
 }
 .container .contant .group-item .item:hover{
-  border:2px solid green;
-  /* transition:1s; */
+  border:1px solid green;
+  border-radius: 10px;
 }
 .container .contant .group-item .item h4 {
   color: green;
@@ -166,7 +201,7 @@
   position: absolute;
   top: 200px;
   background: #ffff;
-  padding: 10px 0px 15px 0px;
+  padding: 10px 0px 5px 0px;
   border-radius: 10px;
   width: 450px;
   text-align: center;
@@ -179,52 +214,59 @@
   cursor: pointer;
   color: #90949c;
 }
-/* .top-form .close-modal h3{
-  color: #90949c;
-} */
 .top-form .close-modal {
   cursor: pointer;
   font-size: 20px;
- 
 }
-.login-form {
-  position: relative;
+#modal_s8server .modal .login-form{
+  margin: 15px;
 }
-.login-form form input {
-  width: 90%;
-  margin-bottom: 20px;
-  padding: 10px 30px;
-  box-sizing: border-box;
-  border: 1px solid #d0d5d8;
+#modal_s8server .modal .login-form .localhost{
+  padding: 12px;
+  border: 1px solid #90949c;
+  margin: 13px 10px; 
   border-radius: 3px;
-  font-size: 19px;
-}
-#modal_s8server .modal .login-form .globe i {
-  position: absolute;
-  top: 18px;
-  left: 32px;
+  text-align: start;
+  cursor: pointer;
+  font-size: 20px;
   color: #90949c;
-  font-size: 15px;
 }
-#modal_s8server .modal .login-form .database i {
-  position: absolute;
-  top: 86px;
-  left: 32px;
+#modal_s8server .modal .login-form i{
+  padding-right: 10px;
+  font-size: 18px;
+}
+#modal_s8server .modal .login-form .server{
+  font-size: 20px;
+  padding: 12px;
+  border: 1px solid #90949c;
+  margin: 0px 10px; 
+  border-radius: 3px;
+  text-align: start;
+  cursor: pointer;
   color: #90949c;
-  font-size: 15px;
 }
-.login-form button {
+#modal_s8server .modal .login-form .localhost:hover{
+  border: 1px solid green;
+  color: green;
+}
+
+#modal_s8server .modal .login-form .server:hover{
+  border: 1px solid green;
+  color: green;
+}
+#modal_s8server .modal .login-form button{
   float: right;
-  padding: 10px 15px;
-  width: 15%;
-  background-color:gray;
-  border: 0;
+  margin: 15px 10px;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: #90949c;
   border-radius: 3px;
-  margin: 5px 22px;
+  background: gray;
+  border: none;
   color: white;
 }
-.login-form button:hover{
-  background: rgb(89, 87, 87);
+#modal_s8server .modal .login-form button:hover{
+  background: rgb(88, 88, 88);
 }
 /* edit profile */
 #modal_editprofile {
@@ -324,7 +366,7 @@
 }
 #modal_changePw .modal_change {
   background: #fff;
-  padding: 10px 0px 20px 0;
+  padding: 10px 0px 17px 0;
   border-radius: 10px;
   width: 400px;
   text-align: center;
@@ -401,359 +443,178 @@
 #modal_changePw .modal_change .footer button.btn-cancel:hover {
   background: rgb(90, 90, 90);
 }
-@media screen and (max-width:400px) {
-  #icon-menu {
-    display: block;
-  }
-  .container .header {
-    width: 100%;
-    height: 60px;
-    background: green;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10px;
-  }
-  .container .header .menu-left .logo h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 15px;
-  }
-  .menu-popup{
+@media screen and (max-width:576px){
+  .container .header .menu-left .title-logo{
     display: none;
-    width: 200px;
-    background: red;
-
   }
-  .menu-popup .box-popu{
-    margin-top: 0px;
-    width: 100%;
-    position: absolute;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .container .header .menu-left .icon-s8{
+    font-size: 16px;
   }
-  .menu-popup .box-popu button{
-    padding: 10px;
-    background:none;
-    border: none;
+  .container .header .menu-right .title-user{
+    display: none;
   }
-  .menu-popup .box-popu button:hover{
-    color: green;
+  .container .header .menu-right .icon-user{
+    font-size: 16px;
+  }
+  .container .header .menu-right .icon-fullscreen{
+    display: none;
   }
   .box-user {
     display: none;
-    padding: 1rem;
+    padding: 0.5rem;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
-    width: 210px;
+    width: 180px;
     position: absolute;
-    top: 200px;
-    left:90px;
+    top: 54px;
+    right: 37px;
     border-radius: 3px;
   }
-  #modal_s8server .modal {
-    position: absolute;
-    top: 100px;
-    background: #e6ecf0;
-    padding: 5px 0px 10px 0;
+  .box-user .icon-user i {
+    font-size: 35px;
+  }
+  .box-user .icon-user .title-user {
+    font-size: 23px;
+  }
+  /* edit-profile */
+  #modal_editprofile .modal {
+    background: #ffff;
+    padding: 0px 0px 10px 0;
     border-radius: 10px;
-    width: 300px;
-    text-align: center;
+    width: 320px;
+    color: gray;
   }
-  #modal_s8server .modal .top-form {
-    padding: 5px 11px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 6px;
-    cursor: pointer;
-    font-size: 15px;
+  #modal_editprofile .modal .edit_form .profile img {
+    width: 100px;
+    height: 100px;
   }
-  .top-form .close-modal {
-    cursor: pointer;
-    font-size: 15px;
-  }
-  .login-form {
-    position: relative;
-  }
-  .login-form form input {
-    width: 94%;
-    margin-bottom: 16px;
-    padding: 5px 30px;
+  #modal_editprofile .modal .edit_form input {
+    width: 100%;
+    margin: 2px 0px;
+    padding: 5px 0px;
     box-sizing: border-box;
     border: 1px solid #d0d5d8;
     border-radius: 3px;
-    font-size: 15px;
   }
-  #modal_s8server .modal .login-form .globe i {
+  #modal_editprofile .modal .edit_form .form_item .icon-show-password {
     position: absolute;
-    top: 10px;
-    left: 22px;
-    color: #90949c;
-    font-size: 13px;
+    top: 99px;
+    right: 22px;
+    font-size: 11px;
   }
-  #modal_s8server .modal .login-form .database i {
-    position: absolute;
-    top: 58px;
-    left: 22px;
-    color: #90949c;
-    font-size: 13px;
+  #modal_editprofile .modal .edit_form .footer button {
+    padding: 5px 10px;
   }
-  .login-form button {
-    float: right;
-    padding: 7px 15px;
-    width: 23%;
-    background-color: gray;
-    border: 0;
-    border-radius: 3px;
-    margin: 1px 11px;
-    color: white;
+  /* change-profile */
+  #modal_changePw .modal_change {
+    background: #ffff;
+    padding: 0px 0px 17px 0;
+    border-radius: 10px;
+    width: 320px;
+    color: gray;
   }
-  /* edit profile */
-#modal_editprofile {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 100;
-  display: none;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-}
-#modal_editprofile .modal {
-  background: #e6ecf0;
-  padding: 10px 0px 13px 0;
-  border-radius: 10px;
-  width: 300px;
-}
-#modal_editprofile .modal .top_form {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-#modal_editprofile .modal .edit_form {
-  text-align: center;
-}
-#modal_editprofile .modal .edit_form .form_item {
-  text-align: start;
-  padding: 10px;
-  position: relative;
-}
-#modal_editprofile .modal .edit_form .profile img {
-  width: 100px;
-  height: 100px;
-}
-#modal_editprofile .modal .edit_form span {
-  color: red;
-}
-#modal_editprofile .modal .edit_form input {
-  width: 100%;
-  margin: 5px 0px;
-  padding: 7px 10px;
-  box-sizing: border-box;
-  border: 1px solid #d0d5d8;
-  border-radius: 3px;
-}
-#modal_editprofile .modal .edit_form .form_item .icon-show-password {
-  position: absolute;
-    top: 107px;
-    right: 20px;
-    font-size: 13px;
-}
-#modal_editprofile .modal .edit_form .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 10px;
-}
-#modal_editprofile .modal .edit_form .footer button {
-  padding: 5px 10px;
-}
-#modal_editprofile .modal .edit_form .footer button.btn-save:hover {
-  background: rgb(11, 152, 11);
-}
-#modal_editprofile .modal .edit_form .footer button.btn-cancel {
-  background: gray;
-  border-radius: 3px;
-  border: none;
-  color: white;
-}
-#modal_editprofile .modal .edit_form .footer button.btn-cancel:hover {
-  background: rgb(63, 63, 63);
-}
-/* change-profile */
-#modal_changePw {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 100;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-#modal_changePw .modal_change {
-  background: #e6ecf0;
-  padding: 10px 0px 13px 0;
-  border-radius: 10px;
-  width: 300px;
-  text-align: center;
-}
-#modal_changePw .modal_change .top_form {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 15px;
-  margin-bottom: 18px;
-  cursor: pointer;
-}
-#modal_changePw .modal_change .change_form .profile img {
-  width: 100px;
-  height: 100px;
-}
-#modal_changePw .modal_change .form-item {
-  margin: 15px;
-  position: relative;
-  text-align: start;
-}
-#modal_changePw .modal_change .form-item span {
-  color: red;
-}
-#modal_changePw .modal_change .form-item input {
-  width: 100%;
-  margin: 5px 0px;
-  padding: 7px 10px;
-  box-sizing: border-box;
-  border: 1px solid #d0d5d8;
-  border-radius: 3px;
-}
-#modal_changePw .modal_change .form-item .icon-show-password {
-  position: absolute;
-  top: 97px;
-  right: 10px;
-  font-size: 13px;
-}
-#modal_changePw .modal_change .form-item .icon-show-password2 {
-  position: absolute;
-  top: 162px;
-  right: 10px;
-  font-size: 13px;
-}
-#modal_changePw .modal_change .form-item .icon-show-password3 {
-  position: absolute;
-  top: 225px;
-  right: 10px;
-  font-size: 13px;
-}
-#modal_changePw .modal_change .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 15px;
-}
-#modal_changePw .modal_change .footer button {
-  padding: 5px 10px;
-}
-#modal_changePw .modal_change .footer button.btn-save {
-  background: green;
-  border-radius: 3px;
-  border: none;
-  color: white;
-}
-#modal_changePw .modal_change .footer button.btn-save:hover {
-  background: rgb(11, 152, 11);
-}
-#modal_changePw .modal_change .footer button.btn-cancel {
-  background:gray;
-  border-radius: 3px;
-  border: none;
-  color: white;
-}
-#modal_changePw .modal_change .footer button.btn-cancel:hover {
-  background: rgb(72, 72, 72);
-}
-}
-@media screen and (max-width: 768px) {
-
-    #icon-menu {
-        display: block;
-        color: #FFFFFF;
-    }
-    #icon-menu:hover{
-        cursor: pointer;
-    }
-  .container .header {
+  #modal_changePw .modal_change .change_form .profile img {
+    width: 100px;
+    height: 100px;
+  }
+  #modal_changePw .modal_change .form-item input {
     width: 100%;
-    height: 60px;
-    background: green;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 32px;
-  }
-  .container .header .menu-left .logo a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 14px;
-  }
-  .container .header .menu-right button {
-    display: none;
-  }
-  .menu-popup{
-    display: none;
-    width: 200px;
-    background: red;
-
-  }
-  .menu-popup .box-popu{
-    margin-top: 0px;
-    width: 100%;
-    position: absolute;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  .menu-popup .box-popu button{
-    padding: 10px;
-    background:none;
-    border: none;
-  }
-  .menu-popup .box-popu button:hover{
-    color: green;
-  }
-  .box-user {
-    display: none;
-    padding: 1rem;
-    background: #fff;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    cursor: pointer;
-    width: 210px;
-    position: absolute;
-    top: 180px;
-    right: 230px;
+    margin: 2px 0px;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #d0d5d8;
     border-radius: 3px;
   }
+  #modal_changePw .modal_change .form-item .icon-show-password {
+    position: absolute;
+    top: 84px;
+    right: 10px;
+    font-size: 11px;
+  } 
+  #modal_changePw .modal_change .form-item .icon-show-password2 {
+    position: absolute;
+    top: 137px;
+    right: 10px;
+    font-size: 11px;
+  }
+  #modal_changePw .modal_change .form-item .icon-show-password3 {
+    position: absolute;
+    top: 192px;
+    right: 10px;
+    font-size: 11px;
+  }
+  #modal_changePw .modal_change .footer button {
+    padding: 5px 10px;
+  }
+  .dropdown-content { 
+    min-width: 50px;
+    z-index: 1;
+    right: 175px;
+  }
+  /* s8-server */
+  #modal_s8server .modal {
+    position: absolute;
+    top: 200px;
+    background: #ffff;
+    padding: 10px 0px 5px 0px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+  }
+  #modal_s8server .modal .login-form .localhost {
+      padding: 10px;
+      margin: 10px 9px;
+      font-size: 16px;
+      color: #90949c;
+  }
+  #modal_s8server .modal .login-form i {
+    font-size: 13px;
+    padding-right: 5px;
+  }
+  #modal_s8server .modal .login-form .server {
+    padding: 10px;
+    margin: 10px 9px;
+    font-size: 16px;
+    color: #90949c;
+  }
+  #modal_s8server .modal .login-form button {
+    padding: 5px 10px;
+}
+}
+@media screen and (min-width:576px){
+  .container .header .menu-left .title-logo{
+    display:flex;
+    font-size: 20px;
+  }
+  .container .header .menu-left .icon-s8 {
+    font-size: 18px;
+  }
+  .container .header .menu-right .title-user {
+    display: flex;
+  }
+}
+@media screen and (min-width:992px){
+  .container .header .menu-left .title-logo{
+    display: flex;
+    font-size: 24px;
+  }
+  .container .header .menu-left .icon-s8 {
+    font-size: 18px;  
+  }
+  .container .header .menu-right .title-user {
+    display: flex;
+  }
+}
 
+@media screen and (min-width:1200px){
+  .container .header .menu-left .title-logo{
+    display: flex;
+    font-size: 28px;
+  }
+  .container .header .menu-left .icon-s8 {
+    font-size: 18px;
+  }
 }
-@media screen and (min-width: 769px){
-    .menu-popup .box-popu button{
-        display: none;
-    }
-}
+
+  

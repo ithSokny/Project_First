@@ -16,23 +16,18 @@
         <div class="header">
             <div class="menu-left">
                 <div class="logo">
-                    <a href=""><img src="./img/elephant.png" style="width:50px;height:50px;"><h2>CODE SECURIRY</h2></a>   
+                    <img src="./img/elephant.png">
+                </div>
+                <div class="title-logo">CORE SECURIRY</div>
+                <div class="icon-s8 s8server">
+                    <i class="fa-solid fa-server "></i>
+                    <span>S8 Server | s8server</span>
                 </div>
             </div>
             <div class="menu-right">
-                <button class="s8server">S8 Server | s8server</button>
-                <button class="icon-user">ITH SOKNY</button>
-                <button class="icon-user"><i class="fa-solid fa-user"></i></button>
-                <button onclick="toggleFullScreen(document.body)"><i class="fa-solid fa-expand"></i></button>
-            </div>
-            <i class="fa-solid fa-bars" id="icon-menu"></i>
-        </div>
-        <!-- click icon user -->
-        <div class="menu-popup">
-            <div class="box-popu">
-                <button class="s8server">S8 Server | s8server</button>
-                <button class="icon-user">ITH SOKNY</button>
-                <button class="icon-user"><i class="fa-solid fa-user"></i></button>
+                <div class="title-user icon-user">ITH SOKNY</div>
+                <div class="icon-user"><i class="fa-solid fa-user"></i></div>
+                <div class="icon-fullscreen" onclick="toggleFullScreen(document.body)"><i class="fa-solid fa-expand"></i></div>
             </div>
         </div>
         <div class="box-user">
@@ -66,7 +61,7 @@
             <div class="group-item">
                 <div class="item">
                     <img src="./img/cybersecurity4.jpg" style="width: 200px; height:200px;" alt="">
-                    <h4>codesecurity</h4>
+                    <h4>core security</h4>
                 </div>
                 <div class="item">
                     <img src="./img/human resource.jpg" style="width: 200px; height:200px;" alt="">
@@ -110,15 +105,13 @@
                     &#10006
                 </div>
             </div>
+            <hr>
             <div class="login-form">
-                <form>
-                    <input type="none" name="" class="form-control" placeholder="Localhost">
-                    <div class="globe"><i class="fa-solid fa-globe"></i></div>
-                  
-                    <input type="password" name="" class="form-control" placeholder="Server">
-                    <div class="database"><i class="fa-solid fa-database"></i></div>
-                </form>
-                <button type="button"  class="submit-btn close-modal">Cencal</button>
+                <div>
+                    <div class="localhost"><i class="fa-solid fa-globe"></i>(Localhost)</div>
+                    <div class="server"><i class="fa-solid fa-server "></i>S8 Server</div>
+                </div>
+            <button type="button"  class="submit-btn close-modal">Cencal</button>
             </div>
         </div>
     </div>
@@ -141,7 +134,7 @@
                     <form action="">
                         <div>
                             <label for=""><span>*</span>Username:</label><br>
-                            <input type="text" name="" id=""><br>                    
+                            <input type="text" name="" id=""><br>                 
                         </div>
                         <div>
                             <label for=""><span>*</span>Password:</label><br>
@@ -241,7 +234,7 @@
             $('.close_modal').click(function(){
                 $("#modal_changePw").fadeOut();
             })
-
+            // click menu
             $('#icon-menu').click(function(){
                 $(".menu-popup").slideToggle();
                 $("#icon-menu").toggleClass('fa-xmark');
