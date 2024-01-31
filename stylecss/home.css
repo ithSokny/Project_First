@@ -483,6 +483,10 @@
     right: 37px;
     border-radius: 3px;
   }
+  .container .contant {
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+  }
   .box-user .icon-user i {
     font-size: 35px;
   }
