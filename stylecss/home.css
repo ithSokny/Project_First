@@ -467,8 +467,7 @@
     display: flex;
   }
   .container .header .menu-left .title-logo{
-    display: none;
-    font-size: 20px;
+    font-size: 14px;
     color: #e6ecf0;
     cursor: pointer;
   }
