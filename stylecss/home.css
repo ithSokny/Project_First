@@ -619,19 +619,19 @@
     position: absolute;
     top: 38px;
     right: 13px;
-    font-size: 14px;
+    font-size: 12px;
   }
   #modal_changePw .modal_change .form-item .icon-show-password2 {
     position: absolute;
     top: 38px;
     right: 13px;
-    font-size: 14px;
+    font-size: 12px;
   }
   #modal_changePw .modal_change .form-item .icon-show-password3 {
     position: absolute;
     top: 38px;
     right: 13px;
-    font-size: 14px;  
+    font-size: 12px;  
   }
   .dropdown-content { 
     min-width: 50px;
