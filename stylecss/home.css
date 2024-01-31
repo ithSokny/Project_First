@@ -25,24 +25,25 @@
 }
 .container .header .menu-left{
   display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
+ 
 } 
 .container .header .menu-left .logo{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
-.container .header .menu-left .title-logo{
+.container .header .menu-left .logo .title-logo{
   font-size: 28px;
   color: #e6ecf0;
   cursor: pointer;
 }
-.container .header .menu-left .icon-s8{
+.container .header .menu-left .logo .icon-s8{
   font-size: 20px;
   color: #e6ecf0;
   cursor: pointer;
 }
-.container .header .menu-left .logo{
+.container .header .menu-left .logo img{
   width: 50x;
   height: 50px;
 }
@@ -459,28 +460,31 @@
   }
   .container .header .menu-left{
     display: flex;
-    gap: 15px;
+  } 
+  .container .header .menu-left .logo{
+    gap: 10px;
     justify-content: center;
     align-items: center;
-  } 
-  .container .header .menu-left .title-logo{
-    font-size: 14px;
+  }
+  .container .header .menu-left .logo .title-logo{
+    font-size: 12px;
     color: #e6ecf0;
     cursor: pointer;
+    display: none;
   }
-  .container .header .menu-left .icon-s8{
-    font-size: 16px;
+  .container .header .menu-left .logo .icon-s8{
+    font-size: 14px;
     color: #e6ecf0;
     cursor: pointer;
     float: left;
   }
-  .container .header .menu-left .logo{
+  .container .header .menu-left .logo img{
     width: 50x;
     height: 50px;
   }
   .container .header .menu-right{
     display: flex;
-    font-size: 18px;
+    font-size: 14px;
     color: #e6ecf0;
     box-sizing: border-box;
     cursor: pointer;
@@ -624,7 +628,7 @@
     padding: 5px 10px;
 }
 }
-@media screen and (min-width:576px){
+/* @media screen and (min-width:576px){
 
   .container .header .menu-left .title-logo{
     display:flex;
@@ -658,6 +662,6 @@
   .container .header .menu-left .icon-s8 {
     font-size: 18px;
   }
-}
+} */
 
   
