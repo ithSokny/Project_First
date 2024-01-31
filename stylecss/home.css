@@ -411,7 +411,7 @@
 }
 #modal_changePw .modal_change .form-item input {
   width: 100%;
-  margin: 7px 0px;
+  margin: 4px 0px;
   padding: 10px 12px;
   box-sizing: border-box;
   border: 1px solid #d0d5d8;
@@ -571,6 +571,7 @@
     border: 1px solid #d0d5d8;
     border-radius: 3px;
     padding: 10px 20px;
+    margin: 3px 0px;
   }#modal_editprofile .modal .edit_form .form_item .icon-eye{
     position: relative;
   }
@@ -610,6 +611,7 @@
     box-sizing: border-box;
     border: 1px solid #d0d5d8;
     border-radius: 3px;
+    margin: 3px 0px;
   }
   #modal_changePw .modal_change .footer button {
     padding: 7px 12px;
@@ -625,19 +627,19 @@
   }
   #modal_changePw .modal_change .form-item .icon-show-password {
     position: absolute;
-    top: 38px;
+    top: 37px;
     right: 13px;
     font-size: 12px;
   }
   #modal_changePw .modal_change .form-item .icon-show-password2 {
     position: absolute;
-    top: 38px;
+    top: 37px;
     right: 13px;
     font-size: 12px;
   }
   #modal_changePw .modal_change .form-item .icon-show-password3 {
     position: absolute;
-    top: 38px;
+    top: 37px;
     right: 13px;
     font-size: 12px;  
   }
