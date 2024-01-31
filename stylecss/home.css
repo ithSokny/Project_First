@@ -200,6 +200,7 @@
   display: none;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 #modal_s8server .modal {
   position: absolute;
@@ -588,9 +589,7 @@
     border-radius: 10px;
     width: 320px;
     color: gray;
- 
   }
-  
   #modal_changePw .modal_change .top_form {
     display: flex;
     justify-content: space-between;
@@ -675,7 +674,7 @@
   }
   #modal_s8server .modal .login-form button {
     padding: 7px 12px;
-}
+  }
 }
 @media screen and (min-width:576px){
   .container {
@@ -730,7 +729,7 @@
     top: 32px;
     right: 13px;
     font-size: 12px;
-}
+  }
   .container .header .menu-right .title-user{
  
     font-size: 22px;
@@ -743,6 +742,35 @@
     padding:3px 6px;
     font-size: 22px;
   }
+  /* s8 server */
+  #modal_s8server .modal {
+    position: absolute;
+    top: 200px;
+    background: #ffff;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    height: 220px;
+    overflow-y: scroll;
+  }
+  #modal_s8server .modal .login-form .localhost {
+      padding: 10px;
+      margin: 10px 9px;
+      font-size: 16px;
+      color: #90949c;
+  }
+  #modal_s8server .modal .login-form i {
+    font-size: 13px;
+    padding-right: 5px;
+  }
+  #modal_s8server .modal .login-form .server {
+    padding: 10px;
+    margin: 10px 9px;
+    font-size: 16px;
+    color: #90949c;
+  }
+  #modal_s8server .modal .login-form button {
+    padding: 7px 12px;
 }
 @media screen and (min-width:992px){
   .container {
