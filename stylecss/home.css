@@ -570,6 +570,7 @@
     border-radius: 10px;
     width: 320px;
     color: gray;
+    overflow: hidden;
   }
   #modal_changePw .modal_change .top_form {
     display: flex;
