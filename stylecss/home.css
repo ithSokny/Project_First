@@ -8,7 +8,7 @@
 :not(:root):fullscreen::backdrop {
   position: fixed;
   inset: 0px;
-  background: #ffffff;
+  background:#FFFFFF;
 }
 .container {
   width: 100%;
@@ -21,66 +21,66 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 32px;
+  padding: 30px 32px;
 }
-.container .header .menu-left {
+.container .header .menu-left{
   display: flex;
   gap: 15px;
   justify-content: center;
   align-items: center;
-}
-.container .header .menu-left .logo {
+} 
+.container .header .menu-left .logo{
   display: flex;
 }
-.container .header .menu-left .title-logo {
+.container .header .menu-left .title-logo{
   font-size: 28px;
   color: #e6ecf0;
   cursor: pointer;
 }
-.container .header .menu-left .icon-s8 {
+.container .header .menu-left .icon-s8{
   font-size: 20px;
   color: #e6ecf0;
   cursor: pointer;
 }
-.container .header .menu-left .logo {
+.container .header .menu-left .logo{
   width: 50x;
   height: 50px;
 }
-.container .header .menu-left .logo .title-user {
+.container .header .menu-left .logo .title-user{
   font-size: 20px;
 }
-.container .header .menu-right {
+.container .header .menu-right{
   display: flex;
   font-size: 20px;
   color: #e6ecf0;
   box-sizing: border-box;
   cursor: pointer;
-  gap: 10px;
+  gap:10px;
 }
-.container .header .menu-right .title-user {
-  padding: 3px 6px;
+.container .header .menu-right .title-user{
+  padding:3px 6px;
 }
-.container .header .menu-right .icon-user {
-  padding: 3px 6px;
+.container .header .menu-right .icon-user{
+  padding:3px 6px;
 }
-.container .header .menu-right .icon-fullscreen {
-  padding: 3px 6px;
+.container .header .menu-right .icon-fullscreen{
+  padding:3px 6px;
 }
-.container .header .menu-right .icon-fullscreen:hover {
+.container .header .menu-right .icon-fullscreen:hover{
   background-color: rgb(3, 210, 3);
-  border-radius: 3px;
+  border-radius:3px;
 }
-.container .header .menu-right .icon-user:hover {
+.container .header .menu-right .icon-user:hover{
   background-color: rgb(3, 210, 3);
-  border-radius: 3px;
+  border-radius:3px;
 }
-.container .header .menu-right .title-user:hover {
+.container .header .menu-right .title-user:hover{
   background-color: rgb(3, 210, 3);
-  border-radius: 3px;
+  border-radius:3px;
 }
-.container .header .menu-right button:hover {
+.container .header .menu-right button:hover{
   background-color: rgb(3, 210, 3);
-  border-radius: 3px;
+  border-radius:3px;
   font-size: 18px;
 }
 .box-user {
@@ -126,7 +126,7 @@
   box-sizing: border-box;
 }
 .list-menu button:hover {
-  color: green;
+  color: green; 
 }
 .list-menu ul i {
   padding-right: 8px;
@@ -174,9 +174,10 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
   border-radius: 10px;
+
 }
-.container .contant .group-item .item:hover {
-  border: 1px solid green;
+.container .contant .group-item .item:hover{
+  border:1px solid green;
   border-radius: 10px;
 }
 .container .contant .group-item .item h4 {
@@ -217,43 +218,43 @@
   cursor: pointer;
   font-size: 20px;
 }
-#modal_s8server .modal .login-form {
+#modal_s8server .modal .login-form{
   margin: 15px;
 }
-#modal_s8server .modal .login-form .localhost {
+#modal_s8server .modal .login-form .localhost{
   padding: 12px;
   border: 1px solid #90949c;
-  margin: 13px 10px;
+  margin: 13px 10px; 
   border-radius: 3px;
   text-align: start;
   cursor: pointer;
   font-size: 20px;
   color: #90949c;
 }
-#modal_s8server .modal .login-form i {
+#modal_s8server .modal .login-form i{
   padding-right: 10px;
   font-size: 18px;
 }
-#modal_s8server .modal .login-form .server {
+#modal_s8server .modal .login-form .server{
   font-size: 20px;
   padding: 12px;
   border: 1px solid #90949c;
-  margin: 0px 10px;
+  margin: 0px 10px; 
   border-radius: 3px;
   text-align: start;
   cursor: pointer;
   color: #90949c;
 }
-#modal_s8server .modal .login-form .localhost:hover {
+#modal_s8server .modal .login-form .localhost:hover{
   border: 1px solid green;
   color: green;
 }
 
-#modal_s8server .modal .login-form .server:hover {
+#modal_s8server .modal .login-form .server:hover{
   border: 1px solid green;
   color: green;
 }
-#modal_s8server .modal .login-form button {
+#modal_s8server .modal .login-form button{
   float: right;
   margin: 15px 10px;
   cursor: pointer;
@@ -264,7 +265,7 @@
   border: none;
   color: white;
 }
-#modal_s8server .modal .login-form button:hover {
+#modal_s8server .modal .login-form button:hover{
   background: rgb(88, 88, 88);
 }
 /* edit profile */
@@ -388,7 +389,7 @@
   text-align: start;
 }
 #modal_changePw .modal_change .form-item span {
-  color: rgb(110, 106, 106);
+  color:rgb(110, 106, 106);
 }
 #modal_changePw .modal_change .form-item input {
   width: 100%;
@@ -442,3 +443,178 @@
 #modal_changePw .modal_change .footer button.btn-cancel:hover {
   background: rgb(90, 90, 90);
 }
+@media screen and (max-width:576px){
+  .container .header .menu-left .title-logo{
+    display: none;
+  }
+  .container .header .menu-left .icon-s8{
+    font-size: 16px;
+  }
+  .container .header .menu-right .title-user{
+    display: none;
+  }
+  .container .header .menu-right .icon-user{
+    font-size: 16px;
+  }
+  .container .header .menu-right .icon-fullscreen{
+    display: none;
+  }
+  .box-user {
+    display: none;
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 180px;
+    position: absolute;
+    top: 54px;
+    right: 37px;
+    border-radius: 3px;
+  }
+  .box-user .icon-user i {
+    font-size: 35px;
+  }
+  .box-user .icon-user .title-user {
+    font-size: 23px;
+  }
+  /* edit-profile */
+  #modal_editprofile .modal {
+    background: #ffff;
+    padding: 0px 0px 10px 0;
+    border-radius: 10px;
+    width: 320px;
+    color: gray;
+  }
+  #modal_editprofile .modal .edit_form .profile img {
+    width: 100px;
+    height: 100px;
+  }
+  #modal_editprofile .modal .edit_form input {
+    width: 100%;
+    margin: 2px 0px;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+  }
+  #modal_editprofile .modal .edit_form .form_item .icon-show-password {
+    position: absolute;
+    top: 99px;
+    right: 22px;
+    font-size: 11px;
+  }
+  #modal_editprofile .modal .edit_form .footer button {
+    padding: 5px 10px;
+  }
+  /* change-profile */
+  #modal_changePw .modal_change {
+    background: #ffff;
+    padding: 0px 0px 17px 0;
+    border-radius: 10px;
+    width: 320px;
+    color: gray;
+  }
+  #modal_changePw .modal_change .change_form .profile img {
+    width: 100px;
+    height: 100px;
+  }
+  #modal_changePw .modal_change .form-item input {
+    width: 100%;
+    margin: 2px 0px;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+  }
+  #modal_changePw .modal_change .form-item .icon-show-password {
+    position: absolute;
+    top: 84px;
+    right: 10px;
+    font-size: 11px;
+  } 
+  #modal_changePw .modal_change .form-item .icon-show-password2 {
+    position: absolute;
+    top: 137px;
+    right: 10px;
+    font-size: 11px;
+  }
+  #modal_changePw .modal_change .form-item .icon-show-password3 {
+    position: absolute;
+    top: 192px;
+    right: 10px;
+    font-size: 11px;
+  }
+  #modal_changePw .modal_change .footer button {
+    padding: 5px 10px;
+  }
+  .dropdown-content { 
+    min-width: 50px;
+    z-index: 1;
+    right: 175px;
+  }
+  /* s8-server */
+  #modal_s8server .modal {
+    position: absolute;
+    top: 200px;
+    background: #ffff;
+    padding: 10px 0px 5px 0px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+  }
+  #modal_s8server .modal .login-form .localhost {
+      padding: 10px;
+      margin: 10px 9px;
+      font-size: 16px;
+      color: #90949c;
+  }
+  #modal_s8server .modal .login-form i {
+    font-size: 13px;
+    padding-right: 5px;
+  }
+  #modal_s8server .modal .login-form .server {
+    padding: 10px;
+    margin: 10px 9px;
+    font-size: 16px;
+    color: #90949c;
+  }
+  #modal_s8server .modal .login-form button {
+    padding: 5px 10px;
+}
+}
+@media screen and (min-width:576px){
+  .container .header .menu-left .title-logo{
+    display:flex;
+    font-size: 20px;
+  }
+  .container .header .menu-left .icon-s8 {
+    font-size: 18px;
+  }
+  .container .header .menu-right .title-user {
+    display: flex;
+  }
+}
+@media screen and (min-width:992px){
+  .container .header .menu-left .title-logo{
+    display: flex;
+    font-size: 24px;
+  }
+  .container .header .menu-left .icon-s8 {
+    font-size: 18px;  
+  }
+  .container .header .menu-right .title-user {
+    display: flex;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .container .header .menu-left .title-logo{
+    display: flex;
+    font-size: 28px;
+  }
+  .container .header .menu-left .icon-s8 {
+    font-size: 18px;
+  }
+}
+
+  
