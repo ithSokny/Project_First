@@ -391,6 +391,14 @@
 #modal_changePw .modal_change .form-item {
   text-align: start;
   padding: 15px;
+}
+#modal_changePw .modal_change .form-item .icon-eye{
+  position: relative;
+}
+#modal_changePw .modal_change .form-item .icon-eye2{
+  position: relative;
+}
+#modal_changePw .modal_change .form-item .icon-eye3{
   position: relative;
 }
 #modal_changePw .modal_change .form-item label{
@@ -409,20 +417,20 @@
 }
 #modal_changePw .modal_change .form-item .icon-show-password {
   position: absolute;
-  top: 127px;
-  right: 25px;
+  top: 38px;
+  right: 13px;
   font-size: 14px;
 }
 #modal_changePw .modal_change .form-item .icon-show-password2 {
   position: absolute;
-  top: 202px;
-  right: 25px;
+  top: 38px;
+  right: 13px;
   font-size: 14px;
 }
 #modal_changePw .modal_change .form-item .icon-show-password3 {
   position: absolute;
-  top: 277px;
-  right: 25px;
+  top: 38px;
+  right: 13px;
   font-size: 14px;  
 }
 #modal_changePw .modal_change .footer {
@@ -586,7 +594,6 @@
     height: 100px;
   }
   #modal_changePw .modal_change .form-item {
-    position: relative;
     text-align: start;
   }
   #modal_changePw .modal_change .form-item input {
@@ -599,23 +606,32 @@
   #modal_changePw .modal_change .footer button {
     padding: 7px 12px;
   }
-  #modal_changePw .modal_change .form-item .icon-show-password{
+  #modal_changePw .modal_change .form-item .icon-eye{
+    position: relative;
+  }
+  #modal_changePw .modal_change .form-item .icon-eye2{
+    position: relative;
+  }
+  #modal_changePw .modal_change .form-item .icon-eye3{
+    position: relative;
+  }
+  #modal_changePw .modal_change .form-item .icon-show-password {
     position: absolute;
-    top: 129px;
-    right: 25px;
-    font-size: 12px;
-  } 
+    top: 38px;
+    right: 13px;
+    font-size: 14px;
+  }
   #modal_changePw .modal_change .form-item .icon-show-password2 {
     position: absolute;
-    top: 203px;
-    right: 25px;
-    font-size: 12px;
-}
+    top: 38px;
+    right: 13px;
+    font-size: 14px;
+  }
   #modal_changePw .modal_change .form-item .icon-show-password3 {
     position: absolute;
-    top: 277px;
-    right: 25px;
-    font-size: 12px;
+    top: 38px;
+    right: 13px;
+    font-size: 14px;  
   }
   .dropdown-content { 
     min-width: 50px;
