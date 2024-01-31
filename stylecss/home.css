@@ -463,9 +463,6 @@
     justify-content: center;
     align-items: center;
   } 
-  .container .header .menu-left .logo{
-    display: flex;
-  }
   .container .header .menu-left .title-logo{
     font-size: 14px;
     color: #e6ecf0;
