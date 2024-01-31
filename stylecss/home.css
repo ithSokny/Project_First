@@ -462,12 +462,14 @@
   }
   .container .header .menu-left .icon-s8{
     font-size: 16px;
+    display: none;
   }
   .container .header .menu-right .title-user{
     display: none;
   }
   .container .header .menu-right .icon-user{
     font-size: 16px;
+    display: none;
   }
   .container .header .menu-right .icon-fullscreen{
     display: none;
