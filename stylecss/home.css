@@ -323,14 +323,14 @@
   border: 1px solid #d0d5d8;
   border-radius: 3px;
 }
-#modal_editprofile .modal .edit_form .form_item .icon{
+#modal_editprofile .modal .edit_form .form_item .icon-eye{
   position: relative;
 }
-#modal_editprofile .modal .edit_form .form_item .icon-show-password {
+#modal_editprofile .modal .edit_form .form_item .icon-eye .icon-show-password {
   position: absolute;
-  right: 25px;
-  top: 106px;
-  font-size: 14px;
+  right: 13px;
+  top: 92px;
+  font-size: 12px;
 }
 #modal_editprofile .modal .edit_form .footer {
   display: flex;
