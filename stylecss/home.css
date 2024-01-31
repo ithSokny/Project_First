@@ -284,6 +284,7 @@
   display: none;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 #modal_editprofile .modal {
   background: #ffff;
@@ -528,6 +529,7 @@
     top: 54px;
     right: 37px;
     border-radius: 3px;
+    position: fixed;
   }
   .container .contant {
     margin: 0 auto;
@@ -555,6 +557,7 @@
     border-radius: 10px;
     width: 320px;
     color: gray;
+    position: fixed;
   }
   #modal_editprofile .modal .edit_form .profile img {
     width: 100px;
@@ -583,6 +586,7 @@
     width: 320px;
     color: gray;
     overflow: hidden;
+    position: fixed;
   }
   #modal_changePw .modal_change .top_form {
     display: flex;
