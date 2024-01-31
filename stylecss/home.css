@@ -282,7 +282,6 @@
   background: rgba(0, 0, 0, 0.6);
   z-index: 100;
   display: none;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -379,7 +378,7 @@
 #modal_changePw .modal_change .top_form {
   display: flex;
   justify-content: space-between;
-  padding: 7px 15px;
+  padding: 0px 15px;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -451,7 +450,6 @@
   .container {
     width: 100%;
     height: auto;
-
   }
   .container .header {
     width: 100%;
@@ -574,6 +572,13 @@
     width: 320px;
     color: gray;
   }
+  #modal_changePw .modal_change .top_form {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
   #modal_changePw .modal_change .change_form .profile img {
     width: 100px;
     height: 100px;
@@ -585,6 +590,9 @@
     box-sizing: border-box;
     border: 1px solid #d0d5d8;
     border-radius: 3px;
+  }
+  #modal_changePw .modal_change .footer button {
+    padding: 7px 12px;
   }
   #modal_changePw .modal_change .form-item .icon-show-password {
     position: absolute;
@@ -603,9 +611,6 @@
     top: 228px;
     right: 10px;
     font-size: 11px;
-  }
-  #modal_changePw .modal_change .footer button {
-    padding: 5px 10px;
   }
   .dropdown-content { 
     min-width: 50px;
