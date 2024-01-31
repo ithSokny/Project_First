@@ -392,7 +392,7 @@
   text-align: start;
 }
 #modal_changePw .modal_change .form-item span {
-  color:rgb(110, 106, 106);
+  color:red;
 }
 #modal_changePw .modal_change .form-item input {
   width: 100%;
@@ -728,7 +728,7 @@
     align-items: center;
   }
   .container .header .menu-left .logo .title-logo{
-    font-size: 24px;
+    font-size: 30px;
     color: #e6ecf0;
     cursor: pointer;
   }
