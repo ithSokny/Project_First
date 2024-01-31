@@ -589,25 +589,26 @@
     box-sizing: border-box;
     border: 1px solid #d0d5d8;
     border-radius: 3px;
+    position: relative;
   }
   #modal_changePw .modal_change .footer button {
     padding: 7px 12px;
   }
-  #modal_changePw .modal_change .form-item .icon-show-password {
+  #modal_changePw .modal_change .form-item .icon-show-password{
     position: absolute;
-    top: 90px;
+    top: 115px;
     right: 10px;
     font-size: 11px;
   } 
   #modal_changePw .modal_change .form-item .icon-show-password2 {
     position: absolute;
-    top: 158px;
+    top: 189px;
     right: 10px;
     font-size: 11px;
 }
   #modal_changePw .modal_change .form-item .icon-show-password3 {
     position: absolute;
-    top: 218px;
+    top: 262px;
     right: 10px;
     font-size: 11px;
   }
