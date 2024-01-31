@@ -574,10 +574,10 @@
   }#modal_editprofile .modal .edit_form .form_item .icon-eye{
     position: relative;
   }
-  #modal_editprofile .modal .edit_form .form_item .icon-show-password {
+  #modal_editprofile .modal .edit_form .form_item .icon-eye .icon-show-password {
     position: absolute;
-    top: 105px;
-    right: 26px;
+    top: 33px;
+    right: 13px;
     font-size: 12px;
   }
   #modal_editprofile .modal .edit_form .footer button {
