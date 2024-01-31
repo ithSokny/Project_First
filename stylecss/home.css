@@ -8,7 +8,7 @@
 :not(:root):fullscreen::backdrop {
   position: fixed;
   inset: 0px;
-  background:#FFFFFF;
+  background: #ffffff;
 }
 .container {
   width: 100%;
@@ -21,66 +21,66 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 32px;
+  padding: 0px 32px;
 }
-.container .header .menu-left{
+.container .header .menu-left {
   display: flex;
   gap: 15px;
   justify-content: center;
   align-items: center;
-} 
-.container .header .menu-left .logo{
+}
+.container .header .menu-left .logo {
   display: flex;
 }
-.container .header .menu-left .title-logo{
+.container .header .menu-left .title-logo {
   font-size: 28px;
   color: #e6ecf0;
   cursor: pointer;
 }
-.container .header .menu-left .icon-s8{
+.container .header .menu-left .icon-s8 {
   font-size: 20px;
   color: #e6ecf0;
   cursor: pointer;
 }
-.container .header .menu-left .logo{
+.container .header .menu-left .logo {
   width: 50x;
   height: 50px;
 }
-.container .header .menu-left .logo .title-user{
+.container .header .menu-left .logo .title-user {
   font-size: 20px;
 }
-.container .header .menu-right{
+.container .header .menu-right {
   display: flex;
   font-size: 20px;
   color: #e6ecf0;
   box-sizing: border-box;
   cursor: pointer;
-  gap:10px;
+  gap: 10px;
 }
-.container .header .menu-right .title-user{
-  padding:3px 6px;
+.container .header .menu-right .title-user {
+  padding: 3px 6px;
 }
-.container .header .menu-right .icon-user{
-  padding:3px 6px;
+.container .header .menu-right .icon-user {
+  padding: 3px 6px;
 }
-.container .header .menu-right .icon-fullscreen{
-  padding:3px 6px;
+.container .header .menu-right .icon-fullscreen {
+  padding: 3px 6px;
 }
-.container .header .menu-right .icon-fullscreen:hover{
+.container .header .menu-right .icon-fullscreen:hover {
   background-color: rgb(3, 210, 3);
-  border-radius:3px;
+  border-radius: 3px;
 }
-.container .header .menu-right .icon-user:hover{
+.container .header .menu-right .icon-user:hover {
   background-color: rgb(3, 210, 3);
-  border-radius:3px;
+  border-radius: 3px;
 }
-.container .header .menu-right .title-user:hover{
+.container .header .menu-right .title-user:hover {
   background-color: rgb(3, 210, 3);
-  border-radius:3px;
+  border-radius: 3px;
 }
-.container .header .menu-right button:hover{
+.container .header .menu-right button:hover {
   background-color: rgb(3, 210, 3);
-  border-radius:3px;
+  border-radius: 3px;
   font-size: 18px;
 }
 .box-user {
@@ -126,7 +126,7 @@
   box-sizing: border-box;
 }
 .list-menu button:hover {
-  color: green; 
+  color: green;
 }
 .list-menu ul i {
   padding-right: 8px;
@@ -174,10 +174,9 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
   border-radius: 10px;
-
 }
-.container .contant .group-item .item:hover{
-  border:1px solid green;
+.container .contant .group-item .item:hover {
+  border: 1px solid green;
   border-radius: 10px;
 }
 .container .contant .group-item .item h4 {
@@ -218,43 +217,43 @@
   cursor: pointer;
   font-size: 20px;
 }
-#modal_s8server .modal .login-form{
+#modal_s8server .modal .login-form {
   margin: 15px;
 }
-#modal_s8server .modal .login-form .localhost{
+#modal_s8server .modal .login-form .localhost {
   padding: 12px;
   border: 1px solid #90949c;
-  margin: 13px 10px; 
+  margin: 13px 10px;
   border-radius: 3px;
   text-align: start;
   cursor: pointer;
   font-size: 20px;
   color: #90949c;
 }
-#modal_s8server .modal .login-form i{
+#modal_s8server .modal .login-form i {
   padding-right: 10px;
   font-size: 18px;
 }
-#modal_s8server .modal .login-form .server{
+#modal_s8server .modal .login-form .server {
   font-size: 20px;
   padding: 12px;
   border: 1px solid #90949c;
-  margin: 0px 10px; 
+  margin: 0px 10px;
   border-radius: 3px;
   text-align: start;
   cursor: pointer;
   color: #90949c;
 }
-#modal_s8server .modal .login-form .localhost:hover{
+#modal_s8server .modal .login-form .localhost:hover {
   border: 1px solid green;
   color: green;
 }
 
-#modal_s8server .modal .login-form .server:hover{
+#modal_s8server .modal .login-form .server:hover {
   border: 1px solid green;
   color: green;
 }
-#modal_s8server .modal .login-form button{
+#modal_s8server .modal .login-form button {
   float: right;
   margin: 15px 10px;
   cursor: pointer;
@@ -265,7 +264,7 @@
   border: none;
   color: white;
 }
-#modal_s8server .modal .login-form button:hover{
+#modal_s8server .modal .login-form button:hover {
   background: rgb(88, 88, 88);
 }
 /* edit profile */
@@ -389,7 +388,7 @@
   text-align: start;
 }
 #modal_changePw .modal_change .form-item span {
-  color:rgb(110, 106, 106);
+  color: rgb(110, 106, 106);
 }
 #modal_changePw .modal_change .form-item input {
   width: 100%;
@@ -443,7 +442,7 @@
 #modal_changePw .modal_change .footer button.btn-cancel:hover {
   background: rgb(90, 90, 90);
 }
-@media screen and (max-width:576px){
+@media screen and (max-width: 576px) {
   .container {
     width: 100%;
     height: auto;
@@ -455,23 +454,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
-}
-  .container .header .menu-left .title-logo{
+    padding: 0px 20px;
+  }
+  .container .header .menu-left {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .header .menu-left .title-logo {
     display: none;
   }
-  .container .header .menu-left .icon-s8{
+  .container .header .menu-left .icon-s8 {
     font-size: 16px;
+  }
+  .container .header .menu-right .title-user {
     display: none;
   }
-  .container .header .menu-right .title-user{
-    display: none;
-  }
-  .container .header .menu-right .icon-user{
+  .container .header .menu-right .icon-user {
     font-size: 16px;
-    display: none;
   }
-  .container .header .menu-right .icon-fullscreen{
+  .container .header .menu-right .icon-fullscreen {
     display: none;
   }
   .box-user {
@@ -546,7 +549,7 @@
     top: 84px;
     right: 10px;
     font-size: 11px;
-  } 
+  }
   #modal_changePw .modal_change .form-item .icon-show-password2 {
     position: absolute;
     top: 137px;
@@ -562,7 +565,7 @@
   #modal_changePw .modal_change .footer button {
     padding: 5px 10px;
   }
-  .dropdown-content { 
+  .dropdown-content {
     min-width: 50px;
     z-index: 1;
     right: 175px;
@@ -578,10 +581,10 @@
     text-align: center;
   }
   #modal_s8server .modal .login-form .localhost {
-      padding: 10px;
-      margin: 10px 9px;
-      font-size: 16px;
-      color: #90949c;
+    padding: 10px;
+    margin: 10px 9px;
+    font-size: 16px;
+    color: #90949c;
   }
   #modal_s8server .modal .login-form i {
     font-size: 13px;
@@ -595,7 +598,7 @@
   }
   #modal_s8server .modal .login-form button {
     padding: 5px 10px;
-}
+  }
 }
 /* @media screen and (min-width:576px){
   .container .header .menu-left .title-logo{
@@ -631,5 +634,3 @@
     font-size: 18px;
   }
 } */
-
-  
