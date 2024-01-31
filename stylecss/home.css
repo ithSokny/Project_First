@@ -285,6 +285,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
+  /* pointer-events: none; */
 }
 #modal_editprofile .modal {
   background: #ffff;
