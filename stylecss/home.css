@@ -260,7 +260,7 @@
 }
 #modal_s8server .modal .login-form button{
   float: right;
-  margin: 15px 10px;
+  margin: 0px 10px;
   cursor: pointer;
   padding: 10px 20px;
   color: #90949c;
@@ -285,7 +285,6 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  /* pointer-events: none; */
 }
 #modal_editprofile .modal {
   background: #ffff;
@@ -589,10 +588,9 @@
     border-radius: 10px;
     width: 320px;
     color: gray;
-    overflow: hidden;
-    position: fixed;
-    overscroll-behavior-y: none;
+ 
   }
+  
   #modal_changePw .modal_change .top_form {
     display: flex;
     justify-content: space-between;
@@ -651,12 +649,13 @@
   /* s8-server */
   #modal_s8server .modal {
     position: absolute;
-    top: 200px;
+    top: 150px;
     background: #ffff;
-    padding: 10px 0px 5px 0px;
     border-radius: 10px;
     width: 350px;
     text-align: center;
+    height: 240px;
+    overflow-y: scroll;
   }
   #modal_s8server .modal .login-form .localhost {
       padding: 10px;
@@ -701,12 +700,12 @@
     align-items: center;
   }
   .container .header .menu-left .logo .title-logo{
-    font-size: 24px;
+    font-size: 22px;
     color: #e6ecf0;
     cursor: pointer;
   }
   .container .header .menu-left .logo .icon-s8{
-    font-size: 18px;
+    font-size: 22px;
     color: #e6ecf0;
     cursor: pointer;
     float: left;
@@ -717,23 +716,32 @@
   }
   .container .header .menu-right{
     display: flex;
-    font-size: 18px;
+    font-size: 22px;
     color: #e6ecf0;
     box-sizing: border-box;
     cursor: pointer;
     gap:10px;
   }
+  }#modal_editprofile .modal .edit_form .form_item .icon-eye{
+    position: relative;
+  }
+  #modal_editprofile .modal .edit_form .form_item .icon-eye .icon-show-password {
+    position: absolute;
+    top: 32px;
+    right: 13px;
+    font-size: 12px;
+}
   .container .header .menu-right .title-user{
-    /* display: none; */
-    font-size: 18px;
+ 
+    font-size: 22px;
   }
   .container .header .menu-right .icon-user{
-    font-size: 18px;
+    font-size: 22px;
     padding:3px 6px;
   }
   .container .header .menu-right .icon-fullscreen{
     padding:3px 6px;
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width:992px){
@@ -759,12 +767,12 @@
     align-items: center;
   }
   .container .header .menu-left .logo .title-logo{
-    font-size: 30px;
+    font-size: 27px;
     color: #e6ecf0;
     cursor: pointer;
   }
   .container .header .menu-left .logo .icon-s8{
-    font-size: 20px;
+    font-size: 22px;
     color: #e6ecf0;
     cursor: pointer;
     float: left;
@@ -775,7 +783,7 @@
   }
   .container .header .menu-right{
     display: flex;
-    font-size: 20px;
+    font-size: 22px;
     color: #e6ecf0;
     box-sizing: border-box;
     cursor: pointer;
@@ -785,12 +793,12 @@
     font-size: 20px;
   }
   .container .header .menu-right .icon-user{
-    font-size: 20px;
+    font-size: 22px;
     padding:3px 6px;
   }
   .container .header .menu-right .icon-fullscreen{
     padding:3px 6px;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
