@@ -675,11 +675,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: rgb(193, 193, 193);
+    background: #FFFFFF;
     border-radius: 10px 10px 0px 0px;
     position: fixed;
     width: 330px;
     margin-top: -60px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     
   }
   #modal_s8server .modal .top-form .item{

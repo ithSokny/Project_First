@@ -227,7 +227,8 @@
             window.addEventListener("scroll",noscroll);
         }
         function scroll(){
-            
+            window.scrollTo(0,0);
+            window.removeEventListener("scroll",noscroll);
         }
         
         $(function(){
