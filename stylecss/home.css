@@ -646,6 +646,19 @@
     right: 175px;
   }
   /* s8-server */
+  #modal_s8server {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
   #modal_s8server .modal {
     position: absolute;
     top: 150px;
@@ -743,12 +756,25 @@
     font-size: 22px;
   }
   /* s8 server */
+  #modal_s8server {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
   #modal_s8server .modal {
     position: absolute;
     top: 200px;
     background: #ffff;
     border-radius: 10px;
-    width: 450px;
+    width: 350px;
     text-align: center;
     height: 220px;
     overflow-y: scroll;
