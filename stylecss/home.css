@@ -191,7 +191,7 @@
 /* S8server */
 #modal_s8server {
   position: absolute;
-  top: 0;
+  top:0;
   bottom: 0;
   right: 0;
   left: 0;
@@ -204,75 +204,70 @@
 }
 #modal_s8server .modal {
   position: absolute;
-  top: 200px;
+  top: 100px;
   background: #ffff;
-  padding: 10px 0px 5px 0px;
   border-radius: 10px;
   width: 450px;
   text-align: center;
+  height: 673px;
+  overflow-y: scroll;
+  
+ 
 }
 #modal_s8server .modal .top-form {
-  padding: 0px 22px;
+  text-align: center;  
+  
+}
+#modal_s8server .modal .top-header{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
-  cursor: pointer;
-  color: #90949c;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(193, 193, 193);
+  border-radius: 10px 0px 0px 0px;
+  position: fixed;
+  width: 434px;
+  margin-top: -60px;
 }
-.top-form .close-modal {
-  cursor: pointer;
+#modal_s8server .modal .top-form .item{
   font-size: 20px;
+  margin: 10px;
 }
-#modal_s8server .modal .login-form{
-  margin: 15px;
+#modal_s8server .modal .top-form .item img{
+  width: 50px;
+  height: 50px;
 }
-#modal_s8server .modal .login-form .localhost{
-  padding: 12px;
-  border: 1px solid #90949c;
-  margin: 13px 10px; 
-  border-radius: 3px;
-  text-align: start;
-  cursor: pointer;
-  font-size: 20px;
-  color: #90949c;
+#modal_s8server .modal .top-form .localhost{
+  border: 1px solid grey;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 10px;
+  margin-top: 60px;
+  gap: 7px;
+  color: gray;
 }
-#modal_s8server .modal .login-form i{
-  padding-right: 10px;
-  font-size: 18px;
+#modal_s8server .modal .top-form .server{
+  border: 1px solid grey;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 10px;
+  gap: 7px;
+  color: gray;
 }
-#modal_s8server .modal .login-form .server{
-  font-size: 20px;
-  padding: 12px;
-  border: 1px solid #90949c;
-  margin: 0px 10px; 
-  border-radius: 3px;
-  text-align: start;
-  cursor: pointer;
-  color: #90949c;
-}
-#modal_s8server .modal .login-form .localhost:hover{
-  border: 1px solid green;
-  color: green;
+#modal_s8server .modal .top-form .server img{
+  width: 50px;
+  height: 50px;
 }
 
-#modal_s8server .modal .login-form .server:hover{
+#modal_s8server .modal .top-form .localhost:hover{
   border: 1px solid green;
-  color: green;
 }
-#modal_s8server .modal .login-form button{
-  float: right;
-  margin: 0px 10px;
-  cursor: pointer;
-  padding: 10px 20px;
-  color: #90949c;
-  border-radius: 3px;
-  background: gray;
-  border: none;
-  color: white;
+#modal_s8server .modal .top-form .server:hover{
+  border: 1px solid green;
 }
-#modal_s8server .modal .login-form button:hover{
-  background: rgb(88, 88, 88);
-}
+
 /* edit profile */
 #modal_editprofile {
   position: absolute;
@@ -650,7 +645,7 @@
   /* s8-server */
   #modal_s8server {
     position: absolute;
-    top: 0;
+    top:0;
     bottom: 0;
     right: 0;
     left: 0;
@@ -663,32 +658,66 @@
   }
   #modal_s8server .modal {
     position: absolute;
-    top: 150px;
+    top: 100px;
     background: #ffff;
     border-radius: 10px;
-    width: 350px;
+    width: 330px;
     text-align: center;
-    height: 220px;
+    height: 492px;
     overflow-y: scroll;
+    
+   
   }
-  #modal_s8server .modal .login-form .localhost {
-      padding: 10px;
-      margin: 10px 9px;
-      font-size: 16px;
-      color: #90949c;
+  #modal_s8server .modal .top-form {
+    text-align: center;  
+    
   }
-  #modal_s8server .modal .login-form i {
-    font-size: 13px;
-    padding-right: 5px;
+  #modal_s8server .modal .top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgb(193, 193, 193);
+    border-radius: 10px 10px 0px 0px;
+    position: fixed;
+    width: 330px;
+    margin-top: -60px;
   }
-  #modal_s8server .modal .login-form .server {
-    padding: 10px;
-    margin: 10px 9px;
-    font-size: 16px;
-    color: #90949c;
+  #modal_s8server .modal .top-form .item{
+    font-size: 20px;
+    margin: 10px;
   }
-  #modal_s8server .modal .login-form button {
-    padding: 7px 12px;
+  #modal_s8server .modal .top-form .item img{
+    width: 50px;
+    height: 50px;
+  }
+  #modal_s8server .modal .top-form .localhost{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    margin-top: 60px;
+    gap: 7px;
+  }
+  #modal_s8server .modal .top-form .server{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    gap: 7px;
+  }
+  #modal_s8server .modal .top-form .server img{
+    width: 50px;
+    height: 50px;
+  }
+  
+  #modal_s8server .modal .top-form .localhost:hover{
+    border: 1px solid green;
+  }
+  #modal_s8server .modal .top-form .server:hover{
+    border: 1px solid green;
   }
 }
 /* @media screen and (min-width:576px){
