@@ -227,13 +227,14 @@
             window.addEventListener("scroll",noscroll);
         }
         function scroll(){
-            window.scrollTo(0,100);
-            window.addEventListener("overflow-y",auto);
+            window.scrollTo(0,0);
+            window.addEventListener("scroll",scroll);
         }
         
         $(function(){
             $('.s8server').click(function(){    
                 $("#modal_s8server").fadeIn().css("display","flex");
+                $(".box-user").fadeIn().css("display","none");
                 noscroll();
             })
             $('.close-modal').click(function(){
