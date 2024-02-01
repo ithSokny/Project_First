@@ -372,6 +372,7 @@
   display: none;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 #modal_changePw .modal_change {
   background: #fff;
