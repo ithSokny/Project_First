@@ -247,10 +247,12 @@
             })
             //click btn edid profile
             $('.edit_profile').click(function(){
-                $("#modal_editprofile").fadeIn().css("display","flex");                
+                $("#modal_editprofile").fadeIn().css("display","flex");
+                noscroll();                
             })
             $('.close_modal').click(function(){
                 $("#modal_editprofile").fadeOut();
+                scroll();
             })
             // click btn logout 
             $('#btn_logout').click(function(){
@@ -259,16 +261,12 @@
             // click btn change password
             $('.change_password').click(function(){
                 $("#modal_changePw").fadeIn().css("display","flex");
+                noscroll(); 
             })
             $('.close_modal').click(function(){
                 $("#modal_changePw").fadeOut();
-            })
-            // click menu
-            $('#icon-menu').click(function(){
-                $(".menu-popup").slideToggle();
-                $("#icon-menu").toggleClass('fa-xmark');
-
-            })
+                scroll();
+            })    
         })
         function toggleFullScreen(elem) {
                 if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
