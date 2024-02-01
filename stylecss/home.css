@@ -16,7 +16,7 @@
 }
 .container .header {
   width: 100%;
-  height: 60px;
+  height: 70px;
   background: green;
   display: flex;
   justify-content: space-between;
@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 .container .header .menu-left .logo .icon-s8{
-  font-size: 20px;
+  font-size: 24px;
   color: #e6ecf0;
   cursor: pointer;
 }
@@ -50,11 +50,11 @@
   height: 50px;
 }
 .container .header .menu-left .logo .title-logo{
-  font-size: 20px;
+  font-size: 32px;
 }
 .container .header .menu-right{
   display: flex;
-  font-size: 20px;
+  font-size: 24px;
   color: #e6ecf0;
   box-sizing: border-box;
   cursor: pointer;
@@ -721,174 +721,7 @@
     border: 1px solid green;
   }
 }
-/* @media screen and (min-width:576px){
-  .container {
-    width: 100%;
-    height: auto;
-  }
-  .container .header {
-    width: 100%;
-    height: 60px;
-    background: green;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 22px;
-  }
-  .container .header .menu-left{
-    display: flex;
-  } 
-  .container .header .menu-left .logo{
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-  .container .header .menu-left .logo .title-logo{
-    font-size: 22px;
-    color: #e6ecf0;
-    cursor: pointer;
-  }
-  .container .header .menu-left .logo .icon-s8{
-    font-size: 22px;
-    color: #e6ecf0;
-    cursor: pointer;
-    float: left;
-  }
-  .container .header .menu-left .logo img{
-    width: 50x;
-    height: 50px;
-  }
-  .container .header .menu-right{
-    display: flex;
-    font-size: 22px;
-    color: #e6ecf0;
-    box-sizing: border-box;
-    cursor: pointer;
-    gap:10px;
-  }
-#modal_editprofile .modal .edit_form .form_item .icon-eye{
-  position: relative;
-}
-#modal_editprofile .modal .edit_form .form_item .icon-eye .icon-show-password {
-  position: absolute;
-  top: 32px;
-  right: 13px;
-  font-size: 12px;
-}
-.container .header .menu-right .title-user{
+@media screen and (min-width:576px){
 
-  font-size: 22px;
 }
-.container .header .menu-right .icon-user{
-  font-size: 22px;
-  padding:3px 6px;
-}
-.container .header .menu-right .icon-fullscreen{
-  padding:3px 6px;
-  font-size: 22px;
-}
-/* s8 server */
-/* #modal_s8server {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 100;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-}
-#modal_s8server .modal {
-  position: absolute;
-  top: 200px;
-  background: #ffff;
-  border-radius: 10px;
-  width: 450px;
-  text-align: center;
-  height: 220px;
-  overflow-y: scroll;
-}
-#modal_s8server .modal .login-form .localhost {
-    padding: 10px;
-    margin: 10px 9px;
-    font-size: 16px;
-    color: #90949c;
-}
-#modal_s8server .modal .login-form i {
-  font-size: 13px;
-  padding-right: 5px;
-}
-#modal_s8server .modal .login-form .server {
-  padding: 10px;
-  margin: 10px 9px;
-  font-size: 16px;
-  color: #90949c;
-}
-#modal_s8server .modal .login-form button {
-  padding: 7px 12px;
-} */
-
- 
-  
-/* @media screen and (min-width:992px){
-  .container {
-    width: 100%;
-    height: auto;
-  }
-  .container .header {
-    width: 100%;
-    height: 60px;
-    background: green;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 22px;
-  }
-  .container .header .menu-left{
-    display: flex;
-  } 
-  .container .header .menu-left .logo{
-    gap: 12px;
-    justify-content: center;
-    align-items: center;
-  }
-  .container .header .menu-left .logo .title-logo{
-    font-size: 27px;
-    color: #e6ecf0;
-    cursor: pointer;
-  }
-  .container .header .menu-left .logo .icon-s8{
-    font-size: 22px;
-    color: #e6ecf0;
-    cursor: pointer;
-    float: left;
-  }
-  .container .header .menu-left .logo img{
-    width: 50x;
-    height: 50px;
-  }
-  .container .header .menu-right{
-    display: flex;
-    font-size: 22px;
-    color: #e6ecf0;
-    box-sizing: border-box;
-    cursor: pointer;
-    gap:10px;
-  }
-  .container .header .menu-right .title-user{
-    font-size: 20px;
-  }
-  .container .header .menu-right .icon-user{
-    font-size: 22px;
-    padding:3px 6px;
-  }
-  .container .header .menu-right .icon-fullscreen{
-    padding:3px 6px;
-    font-size: 22px;
-  }
-} */
-
   
