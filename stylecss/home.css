@@ -721,7 +721,529 @@
     border: 1px solid green;
   }
 }
-@media screen and (min-width:576px){
-
+@media screen and (max-width:768px){
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  .container .header {
+    width: 100%;
+    height: 60px;
+    background: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 22px;
+  }
+  .container .header .menu-left{
+    display: flex;
+  } 
+  .container .header .menu-left .logo{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .header .menu-left .logo .title-logo{
+    display: none;
+  }
+  .container .header .menu-left .logo .icon-s8{
+    font-size: 22px;
+    color: #e6ecf0;
+    cursor: pointer;
+    float: left;
+  }
+  .container .header .menu-left .logo .icon-s8 span{
+    font-size: 22px;
+  }
+  .container .header .menu-left .logo img{
+    width: 40x;
+    height: 40px;
+  }
+  .container .header .menu-right{
+    display: flex;
+    font-size: 22px;
+    color: #e6ecf0;
+    box-sizing: border-box;
+    cursor: pointer;
+    gap:10px;
+  }
+  .container .header .menu-right .title-user{
+    display: none;
+    font-size: 15px;
+  }
+  .container .header .menu-right .icon-user{
+    padding:3px 6px;
+    float: right;
+  }
+  .container .header .menu-right .icon-fullscreen{
+    display: none;
+  }
+  .box-user {
+    display: none;
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 180px;
+    position: absolute;
+    top: 54px;
+    right: 37px;
+    border-radius: 3px;
+    position: fixed;
+  }
+  .container .contant {
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+  }
+  .container .contant .group-item .item {
+    text-align: center;
+    padding: 1.5rem 0.5rem;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .box-user .icon-user i {
+    font-size: 35px;
+  }
+  .box-user .icon-user .title-user {
+    font-size: 23px;
+  }
+  /* edit-profile */
+  #modal_editprofile .modal {
+    background: #ffff;
+    border-radius: 10px;
+    width: 320px;
+    color: gray;
+    position: fixed;
+  }
+  #modal_editprofile .modal .edit_form .profile img {
+    width: 100px;
+    height: 100px;
+  }
+  #modal_editprofile .modal .edit_form input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 3px 0px;
+  }#modal_editprofile .modal .edit_form .form_item .icon-eye{
+    position: relative;
+  }
+  #modal_editprofile .modal .edit_form .form_item .icon-eye .icon-show-password {
+    position: absolute;
+    top: 34px;
+    right: 13px;
+    font-size: 12px;
+  }
+  #modal_editprofile .modal .edit_form .footer button {
+    padding: 7px 12px;
+  }
+  /* change-profile */
+  #modal_changePw .modal_change {
+    background: #ffff;
+    border-radius: 10px;
+    width: 320px;
+    color: gray;
+    position: fixed;
+  }
+  #modal_changePw .modal_change .top_form {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  #modal_changePw .modal_change .change_form .profile img {
+    width: 100px;
+    height: 100px;
+  }
+  #modal_changePw .modal_change .form-item {
+    text-align: start;
+  }
+  #modal_changePw .modal_change .form-item input {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+    margin: 3px 0px;
+  }
+  #modal_changePw .modal_change .footer button {
+    padding: 7px 12px;
+  }
+  #modal_changePw .modal_change .form-item .icon-eye{
+    position: relative;
+  }
+  #modal_changePw .modal_change .form-item .icon-eye2{
+    position: relative;
+  }
+  #modal_changePw .modal_change .form-item .icon-eye3{
+    position: relative;
+  }
+  #modal_changePw .modal_change .form-item .icon-show-password {
+    position: absolute;
+    top: 34px;
+    right: 13px;
+    font-size: 12px;
+  }
+  #modal_changePw .modal_change .form-item .icon-show-password2 {
+    position: absolute;
+    top: 34px;
+    right: 13px;
+    font-size: 12px;
+  }
+  #modal_changePw .modal_change .form-item .icon-show-password3 {
+    position: absolute;
+    top: 34px;
+    right: 13px;
+    font-size: 12px;  
+  }
+  .dropdown-content { 
+    min-width: 50px;
+    z-index: 1;
+    right: 175px;
+  }
+  /* s8-server */
+  #modal_s8server {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+  #modal_s8server .modal {
+    position: absolute;
+    top: 100px;
+    background: #ffff;
+    border-radius: 10px;
+    width: 330px;
+    text-align: center;
+    height: 489px;
+    overflow-y: scroll;
+  }
+  #modal_s8server .modal .top-form {
+    text-align: center;  
+    
+  }
+  #modal_s8server .modal .top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+    position: fixed;
+    width: 330px;
+    margin-top: -60px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+  }
+  #modal_s8server .modal .top-form .item{
+    font-size: 20px;
+    margin: 10px;
+  }
+  #modal_s8server .modal .top-form .item img{
+    width: 40px;
+    height:40px;
+  }
+  #modal_s8server .modal .top-form .localhost{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    margin-top: 60px;
+    gap: 7px;
+    padding: 4px;
+  }
+  #modal_s8server .modal .top-form .server{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    gap: 7px;
+  }
+  #modal_s8server .modal .top-form .server img{
+    width: 50px;
+    height: 50px;
+  }
+  #modal_s8server .modal .top-form .localhost:hover{
+    border: 1px solid green;
+  }
+  #modal_s8server .modal .top-form .server:hover{
+    border: 1px solid green;
+  }
 }
+@media screen and (max-width:992px){
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  .container .header {
+    width: 100%;
+    height: 60px;
+    background: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 22px;
+  }
+  .container .header .menu-left{
+    display: flex;
+  } 
+  .container .header .menu-left .logo{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .header .menu-left .logo .title-logo{
+    display: none;
+  }
+  .container .header .menu-left .logo .icon-s8{
+    font-size: 23px;
+    color: #e6ecf0;
+    cursor: pointer;
+    float: left;
+  }
+  .container .header .menu-left .logo .icon-s8 span{
+    font-size: 22px;
+  }
+  .container .header .menu-left .logo img{
+    width: 40x;
+    height: 40px;
+  }
+  .container .header .menu-right{
+    display: flex;
+    font-size: 23px;
+    color: #e6ecf0;
+    box-sizing: border-box;
+    cursor: pointer;
+    gap:10px;
+  }
+  .container .header .menu-right .title-user{
+    font-size: 15px;
+    font-size: 23px;
+  }
+  .container .header .menu-right .icon-user{
+    padding:3px 6px;
+    float: right;
+  }
+  .container .header .menu-right .icon-fullscreen{
+    display: none;
+  }
+  .box-user {
+    display: none;
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 180px;
+    position: absolute;
+    top: 54px;
+    right: 37px;
+    border-radius: 3px;
+    position: fixed;
+  }
+  .container .contant {
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+  }
+  .container .contant .group-item .item {
+    text-align: center;
+    padding: 1.5rem 0.5rem;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .box-user .icon-user i {
+    font-size: 35px;
+  }
+  .box-user .icon-user .title-user {
+    font-size: 23px;
+  }
+  /* edit-profile */
+  #modal_editprofile .modal {
+    background: #ffff;
+    border-radius: 10px;
+    width: 320px;
+    color: gray;
+    position: fixed;
+  }
+  #modal_editprofile .modal .edit_form .profile img {
+    width: 100px;
+    height: 100px;
+  }
+  #modal_editprofile .modal .edit_form input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 3px 0px;
+  }#modal_editprofile .modal .edit_form .form_item .icon-eye{
+    position: relative;
+  }
+  #modal_editprofile .modal .edit_form .form_item .icon-eye .icon-show-password {
+    position: absolute;
+    top: 34px;
+    right: 13px;
+    font-size: 12px;
+  }
+  #modal_editprofile .modal .edit_form .footer button {
+    padding: 7px 12px;
+  }
+  /* change-profile */
+  #modal_changePw .modal_change {
+    background: #ffff;
+    border-radius: 10px;
+    width: 320px;
+    color: gray;
+    position: fixed;
+  }
+  #modal_changePw .modal_change .top_form {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  #modal_changePw .modal_change .change_form .profile img {
+    width: 100px;
+    height: 100px;
+  }
+  #modal_changePw .modal_change .form-item {
+    text-align: start;
+  }
+  #modal_changePw .modal_change .form-item input {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid #d0d5d8;
+    border-radius: 3px;
+    margin: 3px 0px;
+  }
+  #modal_changePw .modal_change .footer button {
+    padding: 7px 12px;
+  }
+  #modal_changePw .modal_change .form-item .icon-eye{
+    position: relative;
+  }
+  #modal_changePw .modal_change .form-item .icon-eye2{
+    position: relative;
+  }
+  #modal_changePw .modal_change .form-item .icon-eye3{
+    position: relative;
+  }
+  #modal_changePw .modal_change .form-item .icon-show-password {
+    position: absolute;
+    top: 34px;
+    right: 13px;
+    font-size: 12px;
+  }
+  #modal_changePw .modal_change .form-item .icon-show-password2 {
+    position: absolute;
+    top: 34px;
+    right: 13px;
+    font-size: 12px;
+  }
+  #modal_changePw .modal_change .form-item .icon-show-password3 {
+    position: absolute;
+    top: 34px;
+    right: 13px;
+    font-size: 12px;  
+  }
+  .dropdown-content { 
+    min-width: 50px;
+    z-index: 1;
+    right: 175px;
+  }
+  /* s8-server */
+  #modal_s8server {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+  #modal_s8server .modal {
+    position: absolute;
+    top: 100px;
+    background: #ffff;
+    border-radius: 10px;
+    width: 330px;
+    text-align: center;
+    height: 489px;
+    overflow-y: scroll;
+  }
+  #modal_s8server .modal .top-form {
+    text-align: center;  
+    
+  }
+  #modal_s8server .modal .top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+    position: fixed;
+    width: 330px;
+    margin-top: -60px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+  }
+  #modal_s8server .modal .top-form .item{
+    font-size: 20px;
+    margin: 10px;
+  }
+  #modal_s8server .modal .top-form .item img{
+    width: 40px;
+    height:40px;
+  }
+  #modal_s8server .modal .top-form .localhost{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    margin-top: 60px;
+    gap: 7px;
+    padding: 4px;
+  }
+  #modal_s8server .modal .top-form .server{
+    border: 1px solid grey;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    gap: 7px;
+  }
+  #modal_s8server .modal .top-form .server img{
+    width: 50px;
+    height: 50px;
+  }
+  #modal_s8server .modal .top-form .localhost:hover{
+    border: 1px solid green;
+  }
+  #modal_s8server .modal .top-form .server:hover{
+    border: 1px solid green;
+  }
+}
+
   
