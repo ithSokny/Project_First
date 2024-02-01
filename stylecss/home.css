@@ -717,6 +717,9 @@
   #modal_s8server .modal .top-form .localhost:hover{
     border: 1px solid green;
   }
+  #modal_s8server .modal .top-form .localhost.active{
+    border: 1px solid green;
+  }
   #modal_s8server .modal .top-form .server:hover{
     border: 1px solid green;
   }
