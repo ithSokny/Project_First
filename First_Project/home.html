@@ -222,12 +222,23 @@
     </div>
     <!-- <script src="./home.js"></script> -->
     <script type="text/javascript">
+        function noscroll(){
+            window.scrollTo(0,0);
+            window.addEventListener("scroll",noscroll);
+        }
+        function scroll(){
+            window.scrollTo(0,100);
+            window.addEventListener("overflow-y",auto);
+        }
+        
         $(function(){
             $('.s8server').click(function(){    
                 $("#modal_s8server").fadeIn().css("display","flex");
+                noscroll();
             })
             $('.close-modal').click(function(){
                 $("#modal_s8server").fadeOut();
+                scroll();
             })
             // click icon user and click name
             $('.icon-user').click(function(){

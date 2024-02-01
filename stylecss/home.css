@@ -665,8 +665,6 @@
     text-align: center;
     height: 492px;
     overflow-y: scroll;
-    
-   
   }
   #modal_s8server .modal .top-form {
     text-align: center;  
@@ -688,8 +686,8 @@
     margin: 10px;
   }
   #modal_s8server .modal .top-form .item img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height:40px;
   }
   #modal_s8server .modal .top-form .localhost{
     border: 1px solid grey;
@@ -712,7 +710,6 @@
     width: 50px;
     height: 50px;
   }
-  
   #modal_s8server .modal .top-form .localhost:hover{
     border: 1px solid green;
   }
