@@ -224,6 +224,9 @@
 #modal_s8server .modal .top-form {
   text-align: center;
 }
+#modal_s8server .modal .top-form .close-modal:hover {
+  cursor: pointer;
+}
 #modal_s8server .modal .top-header {
   display: flex;
   justify-content: space-between;
@@ -700,6 +703,8 @@
   }
   #modal_s8server .modal .top-form {
     text-align: center;
+  }#modal_s8server .modal .top-form .close-modal:hover {
+    cursor: pointer;
   }
   #modal_s8server .modal .top-header {
     display: flex;
@@ -987,6 +992,9 @@
   #modal_s8server .modal .top-form {
     text-align: center;
   }
+  #modal_s8server .modal .top-form .close-modal:hover {
+    cursor: pointer;
+  }
   #modal_s8server .modal .top-header {
     display: flex;
     justify-content: space-between;
@@ -1253,6 +1261,9 @@
   }
   #modal_s8server .modal .top-form {
     text-align: center;
+  }
+  #modal_s8server .modal .top-form .close-modal:hover {
+    cursor: pointer;
   }
   #modal_s8server .modal .top-header {
     display: flex;
