@@ -665,6 +665,16 @@
     right: 175px;
   }
   /* s8-server */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbcbcb;
+    border-radius: 7px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a7a7a7;
+  }
   #modal_s8server {
     position: absolute;
     top: 0;
@@ -941,6 +951,16 @@
     right: 175px;
   }
   /* s8-server */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbcbcb;
+    border-radius: 7px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a7a7a7;
+  }
   #modal_s8server {
     position: absolute;
     top: 0;
